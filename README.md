@@ -113,7 +113,7 @@
 - 需要定期维护和监控流量使用
 - 初次部署需面对防火墙策略与端口问题
 - 如果想使用多地区的节点,成本就高了
-
+--- 
 [自建vps 翻墙教程 点击这里前往](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B)
 ---
 
@@ -135,10 +135,18 @@
 - 依赖第三方机场服务，存在跑路或审查风险
 - 节点速度和稳定性受限于机场质量
 - 部分机场存在隐私隐患
+  
+--- 
 
-[查看clash机场使用图文教程](https://github.com/OpenNetCN/freego/blob/main/clash.md)
-[查看如何选择clash机场](https://github.com/OpenNetCN/freego/blob/main/choose.md)
-[机场推荐榜单查看 | 2025科学上网指南 ](https://gptvpnhelper.com/airport-access/)
+### [查看clash机场使用图文教程](https://github.com/OpenNetCN/freego/blob/main/clash.md)
+
+---
+
+### [查看如何选择clash机场](https://github.com/OpenNetCN/freego/blob/main/choose.md)
+
+---
+
+### [机场推荐榜单查看 | 2025科学上网指南](https://gptvpnhelper.com/airport-access/)
 
 ---
 
@@ -161,8 +169,8 @@
 - 在中国部分地区可能连接不稳定,很多VPN服务必须要手动连接,操作稍微麻烦
 - 优质服务一般需订阅付费
 - 无法定制底层配置，灵活度低于 VPS
-  
-- >[VPN推荐榜单,查看2025VPN使用教程](https://gptvpnhelper.com/network-access/)
+--- 
+[VPN推荐榜单,查看2025VPN使用教程](https://gptvpnhelper.com/network-access/)
 ---
 ## 三种方式的对比与选择建议
 
