@@ -114,7 +114,7 @@
 - 初次部署需面对防火墙策略与端口问题
 - 如果想使用多地区的节点,成本就高了
 
-[vps自建翻墙教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B)
+[自建vps 翻墙教程 点击这里前往](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B)
 ---
 
 ### 8. 方式二：使用 Clash + 机场服务
