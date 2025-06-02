@@ -260,4 +260,4 @@
 
 ## 推荐阅读
 
-- [机场推荐 2025科学上网指南 ](https://gptvpnhelper.com/airport-access/)
+- [机场推荐榜单 | 2025科学上网指南 ](https://gptvpnhelper.com/airport-access/)
