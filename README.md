@@ -81,7 +81,7 @@
 
 ### 6. 技术学习与成长
 
-对于程序员、设计师、研究者、创作者来说，翻墙能极大拓宽学习资源：
+对于程序员、设计师、研究者、创作者学生、来说，翻墙能极大拓宽学习资源：
 
 - **开发平台**：访问 Stack Overflow、GitHub、CodePen、Hacker News
 - **在线课程**：Coursera、edX、Udemy、Khan Academy、freeCodeCamp
@@ -136,6 +136,10 @@
 - 节点速度和稳定性受限于机场质量
 - 部分机场存在隐私隐患
 
+> [查看clash机场使用图文教程](https://github.com/OpenNetCN/freego/blob/main/clash.md)
+> [查看如何选择clash机场](https://github.com/OpenNetCN/freego/blob/main/choose.md)
+> [机场推荐 | 2025科学上网指南 ](https://gptvpnhelper.com/airport-access/)
+
 ---
 
 ### 9. 方式三：使用商业 VPN
@@ -158,7 +162,7 @@
 - 优质服务一般需订阅付费
 - 无法定制底层配置，灵活度低于 VPS
   
-
+推荐阅读：[VPN推荐榜单,2025科学上网教程](https://gptvpnhelper.com/network-access/)
 ---
 ## 三种方式的对比与选择建议
 
