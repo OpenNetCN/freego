@@ -136,9 +136,9 @@
 - 节点速度和稳定性受限于机场质量
 - 部分机场存在隐私隐患
 
-> [查看clash机场使用图文教程](https://github.com/OpenNetCN/freego/blob/main/clash.md)
-> [查看如何选择clash机场](https://github.com/OpenNetCN/freego/blob/main/choose.md)
-> [机场推荐 | 2025科学上网指南 ](https://gptvpnhelper.com/airport-access/)
+- > [查看clash机场使用图文教程](https://github.com/OpenNetCN/freego/blob/main/clash.md)
+- > [查看如何选择clash机场](https://github.com/OpenNetCN/freego/blob/main/choose.md)
+- > [机场推荐榜单查看 | 2025科学上网指南 ](https://gptvpnhelper.com/airport-access/)
 
 ---
 
@@ -162,7 +162,7 @@
 - 优质服务一般需订阅付费
 - 无法定制底层配置，灵活度低于 VPS
   
-推荐阅读：[VPN推荐榜单,2025科学上网教程](https://gptvpnhelper.com/network-access/)
+- >[VPN推荐,查看2025VPN使用教程](https://gptvpnhelper.com/network-access/)
 ---
 ## 三种方式的对比与选择建议
 
