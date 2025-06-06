@@ -147,7 +147,11 @@
 
 ---
 
-### [查看如何选择clash机场](https://github.com/OpenNetCN/freego/blob/main/choose.md)
+### [不知道怎么挑?点击查看如何挑选clash机场](https://github.com/OpenNetCN/freego/blob/main/choose.md)
+
+---
+
+### [分不清各种线路的区别,点击这里讲透直连,中转,专线机场的差异](https://github.com/OpenNetCN/freego/blob/main/route.md)
 
 ---
 
