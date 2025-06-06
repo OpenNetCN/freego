@@ -150,6 +150,12 @@
 
 ---
 
+
+### [分不清各种线路的区别,点击这里讲透直连,中转,专线机场的差异](https://github.com/OpenNetCN/freego/blob/main/route.md)
+
+
+---
+
 ### [机场推荐榜单查看 | 2025科学上网指南](https://gptvpnhelper.com/airport-access/)
 
 ---
