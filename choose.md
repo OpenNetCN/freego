@@ -47,7 +47,7 @@
 - IEPL专线不走公网，速度与稳定性远优于普通线路。
 - 适合高频使用者、跨境工作者或流媒体用户。
 
-### [分不清各种线路的区别,点击这里讲透直连,中转,专线机场的差异](https://github.com/OpenNetCN/freego/blob/main/route.md)
+### [点击这里讲透直连,中转,专线机场的差异](https://github.com/OpenNetCN/freego/blob/main/route.md)
 
 
 ### 客服响应速度与服务态度
