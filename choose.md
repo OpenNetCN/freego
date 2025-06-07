@@ -25,6 +25,9 @@
 - **Trojan**：基于TLS，更加隐蔽稳定，适合对隐私要求高的用户。
   确保你选择的机场支持你所需的平台与协议。
 
+### [科普: Clash机场各种协议的差别介绍](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
+
+
 ---
 
 ## 影响Clash机场选择的关键因素
