@@ -8,6 +8,8 @@
 
 > ⭐ **觉得有帮助？点个 Star⭐  鼓励我继续更新！**  
 
+最近更新时间: 2025年6月8日
+
 ---
 
 ## 为什么在中国需要“翻墙”？
@@ -16,27 +18,28 @@
 
 中国实行的是较为严格的网络审查制度，部分国际主流网站与服务在境内无法直接访问。这些平台包括但不限于：
 
-- 搜索引擎：Google、Bing、Perplexity AI
-- 视频平台：YouTube、Netflix、Amazon Prime Video
-- 社交媒体：Facebook、Instagram、TikTok、X（原 Twitter）、Reddit
-- 学术资源：Google Scholar、PubMed、JSTOR、IEEE Xplore
-- AI 工具：ChatGPT、Claude、Gemini（原 Bard）、Perplexity AI
-- 云服务：AWS、Azure、Google Cloud
+- **搜索引擎**：Google、Bing、DuckDuckGo、Yahoo、Startpage
+- **视频平台（用户上传）**：YouTube、Vimeo、Twitch、Dailymotion、Bilibili（国际版）
+- **流媒体平台（影视订阅）**：Netflix、Disney+、Amazon Prime Video、Hulu、Apple TV+
+- **社交媒体**：Twitter（X）、Facebook、Instagram、Reddit、TikTok
+- **学术资源**：Wikipedia、Google Scholar、Archive.org、ResearchGate、JSTOR
+- **AI 工具**：ChatGPT、Gemini（原 Bard）、Copilot、Claude、Perplexity AI
 
 这种网络环境在一定程度上限制了用户获取全球信息的能力，也影响了部分技术学习、跨国沟通和业务拓展。
 
 ---
 
-### 2. 获取多维度的信息来源
+### 2. 获取多元、真实的信息视角
 
-在信息碎片化与同质化严重的背景下，获取来自不同国家、不同文化背景的信息显得尤为重要。科学上网可以帮助用户：
+在信息碎片化与同质化日益严重的今天，打破“信息茧房”尤为重要。科学上网使用户能够跨越地域限制，接触来自全球不同国家与文化背景的内容，从而：
 
-- 了解不同政治、经济、科技、文化观点
-- 验证事件真相，打破信息孤岛
-- 查阅国际研究、科学论文与数据库
-- 提高外语阅读与批判性思维能力
+- 获取多角度的政治、经济、科技与文化观点
+- 核实新闻真相，避免陷入单一叙事
+- 查阅海外学术论文、科研数据与权威数据库
+- 提升外语阅读能力与批判性思维水平
 
-特别是对于学术研究者、媒体从业者和科技开发人员，多维信息的输入几乎是必需的。
+对学术研究者、媒体工作者、科技开发者而言，多元信息的输入不仅是优势，更是基本需求。
+
 
 ---
 
