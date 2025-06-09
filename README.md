@@ -16,11 +16,12 @@
 
 中国实行的是较为严格的网络审查制度，部分国际主流网站与服务在境内无法直接访问。这些平台包括但不限于：
 
-- 搜索引擎：Google、DuckDuckGo
-- 视频平台：YouTube、Vimeo、Twitch
-- 社交媒体：Twitter、Facebook、Instagram、Reddit
-- 学术资源：Wikipedia、Google Scholar、Archive.org
-- AI 工具：ChatGPT、Bard、Copilot 等
+- 搜索引擎：Google、Bing、DuckDuckGo、Yahoo、Startpage
+- 视频平台：YouTube、Twitch、Vimeo、Dailymotion
+- 社交媒体：Twitter、Facebook、Instagram、Reddit、LinkedIn
+- 学术资源：Wikipedia、Google Scholar、Archive.org、JSTOR、ResearchGate
+- AI 工具：ChatGPT、Gemini（原Bard）、Copilot、Claude、Perplexity AI
+- 流媒体: Netflix、Disney+、HBO Max、Amazon Prime Video、Hulu
 
 这种网络环境在一定程度上限制了用户获取全球信息的能力，也影响了部分技术学习、跨国沟通和业务拓展。
 
