@@ -155,4 +155,6 @@
 ## 推荐阅读
 
 - [机场推荐榜单 | 2025科学上网指南 ](https://gptvpnhelper.com/airport-access/)
+- [Clash机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
+
 
