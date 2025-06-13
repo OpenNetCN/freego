@@ -1,0 +1,5 @@
+theme: jekyll-theme-cayman
+title: 2025 保姆级科学｜ 上网教程 | 持续更新
+description: 是否为打不开google、youtube、chatgpt而烦恼？本教程旨在帮助你畅游国际互联网，助你在互联网上畅通无阻。
+plugins:
+  - jekyll-seo-tag
