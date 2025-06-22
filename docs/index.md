@@ -176,6 +176,12 @@ description: 是否为打不开google、youtube、chatgpt而烦恼？本教程�
 
 ---
 
+---
+
+### [机场推荐榜单查看 | 2025科学上网指南](https://gptvpnhelper.com/airport-access/)
+
+---
+
 ### [Clash机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
 
 ---
@@ -185,10 +191,6 @@ description: 是否为打不开google、youtube、chatgpt而烦恼？本教程�
 ---
 
 ### [查看如何选择clash机场](https://github.com/OpenNetCN/freego/blob/main/choose.md)
-
----
-
-### [机场推荐榜单查看 | 2025科学上网指南](https://gptvpnhelper.com/airport-access/)
 
 ---
 
@@ -214,7 +216,7 @@ description: 是否为打不开google、youtube、chatgpt而烦恼？本教程�
 - 墙内可用节点少,被封控得太严重了
 
 --- 
-[VPN推荐榜单,查看2025VPN使用教程](https://gptvpnhelper.com/network-access/)
+[2025 VPN推荐榜单,VPN墙内使用教程](https://gptvpnhelper.com/network-access/)
 ---
 ## 三种方式的对比与选择建议
 
