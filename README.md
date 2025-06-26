@@ -8,24 +8,39 @@
 
 > ⭐ **觉得有帮助？点个 Star⭐  鼓励我继续更新！**  
 
-最近更新: 2025年6月23日
+最近更新: 2025年6月26日
 
 ---
 
 ## 为什么在中国需要科学上网？
 
-### 1. 互联网信息访问限制
+### 1. 互联网信息访问限制现状
 
-中国实行的是较为严格的网络审查制度，部分国际主流网站与服务在境内无法直接访问。这些平台包括但不限于：
+在中国，互联网实行严格的网络审查制度，许多国际主流网站和服务在境内无法直接访问。这种限制不仅影响用户获取全球信息的能力，也在一定程度上阻碍了技术学习、跨境交流和商业拓展。
 
-- 搜索引擎：Google、Bing、DuckDuckGo、Yahoo、Startpage
-- 视频平台：YouTube、Twitch、Vimeo、Dailymotion
-- 社交媒体：Twitter、Facebook、Instagram、Reddit、LinkedIn
-- 学术资源：Wikipedia、Google Scholar、Archive.org、JSTOR、ResearchGate
-- AI 工具：ChatGPT、Gemini（原Bard）、Copilot、Claude、Perplexity AI
-- 流媒体: Netflix、Disney+、HBO Max、Amazon Prime Video、Hulu
+以下是常见受限平台的分类列表：
 
-这种网络环境在一定程度上限制了用户获取全球信息的能力，也影响了部分技术学习、跨国沟通和业务拓展。
+- **搜索引擎**：  
+  Google、Bing、DuckDuckGo、Yahoo、Startpage
+
+- **视频平台**：  
+  YouTube、Twitch、Vimeo、Dailymotion
+
+- **社交媒体**：  
+  Twitter、Facebook、Instagram、Reddit、LinkedIn
+
+- **学术资源**：  
+  Wikipedia、Google Scholar、Archive.org、JSTOR、ResearchGate
+
+- **AI 工具**：  
+  ChatGPT、Gemini（原 Bard）、Copilot、Claude、Perplexity AI
+
+- **流媒体服务**：  
+  Netflix、Disney+、HBO Max、Amazon Prime Video、Hulu
+
+> ⚠️ *这些平台涵盖了学习、工作、研究、娱乐等多个领域，对于现代数字生活极为重要。*
+
+因此，越来越多用户会选择使用科学上网工具（如 VPN、代理或机场服务）来突破限制，恢复自由、开放的互联网访问环境。
 
 ---
 
