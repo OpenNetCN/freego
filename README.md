@@ -1,14 +1,25 @@
-# 保姆级科学上网/魔法上网教程：为什么、能做什么、怎么做？
+# 2025 保姆级科学上网/魔法上网教程：VPN / Clash 机场 / 自建 VPS 全面解析
 
 ## 引言：什么是“科学上网”？
 
 “科学上网”是中文互联网社区对通过技术手段访问被限制或屏蔽的国外互联网内容的通俗称谓，也被称为“翻墙”。这一术语并不意味着从事违法活动，而是强调以技术方式突破网络封锁，实现对信息的自由访问。
 
-在全球信息高度互联的时代，科学上网不仅关乎网络自由，也关乎学术、工作与生活的全面发展。本文将以科普角度，详细介绍中国用户为什么需要科学上网、突破网络封锁之后能做什么，以及三种主流方式（自建 VPS、Clash 机场、VPN）的区别与选择建议。
+在全球信息高度互联的时代，科学上网不仅关乎网络自由，也关乎学术、工作与生活的全面发展。本文将以科普角度，系统介绍中国用户为什么需要科学上网、突破网络封锁之后能做什么，以及三种主流方式（自建 VPS、Clash 机场、VPN）的区别与选择建议。
 
-> ⭐ **觉得有帮助？点个 Star⭐  鼓励我继续更新！**  
+> ⭐ **觉得有帮助？点个 Star⭐  鼓励我持续更新更多科学上网/Clash 机场/VPN 干货！**  
 
-最近更新: 2025年9月10日
+最近更新: 2025年11月21日
+
+---
+
+## 快速导航（建议收藏本页）
+
+- [为什么在中国需要科学上网？](#为什么在中国需要科学上网)
+- [科学上网之后可以做什么？](#科学上网之后可以做什么)
+- [科学上网的主要方式对比](#科学上网的主要方式对比)
+- [三种方式的对比与选择建议](#三种方式的对比与选择建议)
+- [法律与合规风险提示（重要）](#法律与合规风险提示重要)
+- [常见问答（FAQ）](#常见问答faq)
 
 ---
 
@@ -195,19 +206,19 @@
 
 ---
 
-### [Clash机场推荐榜单查看 | 2025科学上网指南](https://gptvpnhelper.com/airport-access/)
+### [Clash 机场推荐榜单查看 | 2025 科学上网指南](https://gptvpnhelper.com/airport-access/)
 
 ---
 
-### [Clash机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
+### [Clash 机场常用名称解释（名词科普大全）](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
 
 ---
 
-### [查看clash机场使用图文教程](https://github.com/OpenNetCN/freego/blob/main/clash.md)
+### [Clash 机场使用图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
 
 ---
 
-### [查看如何选择clash机场](https://github.com/OpenNetCN/freego/blob/main/choose.md)
+### [如何选择优质 Clash 机场（避坑指南）](https://github.com/OpenNetCN/freego/blob/main/choose.md)
 
 ---
 
@@ -369,11 +380,15 @@
 
 ### 6. 不知道直连、中转、专线机场的差异
 
-### [点击这里图文讲解直连、中转、专线机场的原理](https://github.com/OpenNetCN/freego/blob/main/route.md)
+想系统搞懂直连 / 中转 / 专线（IEPL / IPLC）机场线路的本质区别、适用人群与避坑要点，可以查看这篇图文详解：
 
-### 7. 机场协议太多?分不清机场各种协议
+### [直连、中转、专线 Clash 机场线路原理与选择指南](https://github.com/OpenNetCN/freego/blob/main/route.md)
 
-### [科普: Clash机场各种协议的差别介绍](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
+### 7. 机场协议太多？分不清各种协议
+
+Vmess、Vless、Trojan、Reality、Hysteria、TUIC 等协议的优缺点、适用场景，可以参考下面这篇系统科普：
+
+### [科普：Clash 机场各种协议的差别与选型建议](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
 
 
 ### 8. 国内 App Store 搜到的 VPN 软件能用吗？有没有安全隐患？
@@ -439,4 +454,3 @@
 - [Notion](https://www.notion.so) – 效率工具，可做笔记/知识库/项目管理
 
 ---
-
