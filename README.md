@@ -8,7 +8,7 @@
 
 > ⭐ **觉得有帮助？点个 Star⭐  鼓励我持续更新更多科学上网/Clash 机场/VPN 干货！**  
 
-最近更新: 2025年11月21日
+最近更新: 2025年11月24日
 
 ---
 
@@ -206,7 +206,7 @@
 
 ---
 
-### [Clash 机场推荐榜单查看 | 2025 科学上网指南](https://gptvpnhelper.com/airport-access/)
+### [Clash 机场推荐榜单查看 | 适合AI工具和流媒体平台](https://gptvpnhelper.com/airport-access/)
 
 ---
 
@@ -244,8 +244,6 @@
 - 无法定制底层配置，灵活度低于 VPS
 - 墙内可用节点不多,被封控得太严重了
 
---- 
-[2025 VPN推荐榜单,VPN墙内使用教程](https://gptvpnhelper.com/network-access/)
 ---
 ## 三种方式的对比与选择建议
 
