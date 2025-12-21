@@ -8,7 +8,7 @@
 
 > ⭐ **觉得有帮助？点个 Star⭐  鼓励我持续更新更多科学上网/Clash 机场/VPN 干货！**  
 
-最近更新：2025年12月14日
+最近更新：2025年12月21日
 
 ---
 
@@ -58,7 +58,7 @@
   ChatGPT、Gemini（原 Bard）、Copilot、Claude、Perplexity AI
 
 - **流媒体服务**：  
-  Netflix、Disney+、HBO Max、Amazon Prime Video、Hulu
+  Netflix、Disney+、Max（HBO Max）、Amazon Prime Video、Hulu
 
 > ⚠️ *这些平台涵盖了学习、工作、研究、娱乐等多个领域，对于现代数字生活极为重要。*
 
@@ -98,7 +98,7 @@
 一旦成功突破网络封锁，用户便可无障碍访问全球互联网中的各种服务与平台，包括但不限于：
 
 - **通信与办公**：Gmail、Outlook、Slack、Zoom、Google Docs、Dropbox
-- **AI 工具**：ChatGPT、Bard、Claude、Midjourney、Notion AI
+- **AI 工具**：ChatGPT、Gemini（原 Bard）、Claude、Midjourney、Notion AI
 - **云服务与开发平台**：GitHub、AWS、Google Cloud、Heroku
 - **学术研究**：Google Scholar、arXiv、JSTOR、SpringerLink
 - **媒体与资讯**：BBC、纽约时报、华盛顿邮报、The Verge、NPR
@@ -146,7 +146,7 @@
 如果你只想尽快“能用起来”，按下面流程做就够了（细节看文末延伸阅读）。
 
 1. 明确你的主要用途：AI（ChatGPT/Claude）、学术资料、远程办公、流媒体、游戏。用途会决定你更需要“地区/IP/线路/延迟/稳定性”里的哪一项。
-2. 新手首选 **Clash（Mihomo）+ 机场订阅**：一个客户端 + 一条订阅链接，通常比自建 VPS 更省心。
+2. 新手首选 **Clash（规则分流）+ 机场订阅**：一个客户端 + 一条订阅链接，通常比自建 VPS 更省心。
    - 直接看入口与折扣：[#快速注册入口](#register)
 3. 按图文教程完成配置：导入订阅 → 选 `Rule` 模式 → 开启系统代理或 `TUN` → 测速选节点 → 访问测试网站。
    - 图文教程（含各平台客户端）：[Clash 机场使用图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
@@ -212,9 +212,9 @@
 [自建 VPS 科学上网教程（运维向）](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B)
 ---
 
-### 方式二：Clash + 机场订阅（最推荐新手）
+### 方式二：Clash（规则分流）+ 机场订阅（最推荐新手）
 
-**Clash（Mihomo/Meta）** 是基于规则引擎的跨平台代理客户端（Clash 生态常见内核为 Mihomo / Clash Meta）。配合订阅型“机场”节点服务，可以做到：一键导入、多端通用、规则分流、自动更新。
+**Clash（规则分流客户端）** 是基于规则引擎的跨平台代理客户端（不同客户端可能内置不同 Clash 系内核/维护分支）。配合订阅型“机场”节点服务，可以做到：一键导入、多端通用、规则分流、自动更新。
 
 - **操作流程**：获取订阅链接 → 导入客户端 → 选择策略组/节点 → 开启系统代理或 `TUN` → 测速与日常使用
 - **客户端选择**：不同平台推荐见图文教程（含下载地址与配置截图）
@@ -334,7 +334,7 @@
 
 | 方案 | 上手难度 | 费用结构 | 国内环境稳定性（经验） | 可控性 | 典型场景 |
 | --- | --- | --- | --- | --- | --- |
-| Clash（Mihomo）+ 机场订阅 | 低 | 月付/季付 | 中-高（看机场与线路） | 中 | AI/办公/资料/流媒体 |
+| Clash（规则分流）+ 机场订阅 | 低 | 月付/季付 | 中-高（看机场与线路） | 中 | AI/办公/资料/流媒体 |
 | 商业 VPN | 低（境外）/中（境内） | 月付/年付 | 不稳定（需试用验证） | 低-中 | 出差/公共 Wi‑Fi/隐私 |
 | 自建 VPS | 高 | 服务器+域名等 | 不稳定（需维护） | 高 | 技术学习/备援/可控链路 |
 
