@@ -484,4 +484,4 @@ Reality是基于VLESS协议的新型加密与伪装机制，具备更强抗封�
 
 ## 推荐阅读
 
-- [机场推荐榜单 | 2025科学上网指南 ](https://gptvpnhelper.com/airport-access/)
+- [机场推荐榜单 | 2026科学上网指南 ](https://gptvpnhelper.com/airport-access/)

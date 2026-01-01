@@ -8,7 +8,7 @@
 
 > ⭐ **觉得有帮助？点个 Star⭐  鼓励我持续更新更多科学上网/Clash 机场/VPN 干货！**  
 
-最近更新：2025年12月21日
+最近更新：2026年01月01日
 
 ---
 
@@ -149,12 +149,12 @@
 2. 新手首选 **Clash（规则分流）+ 机场订阅**：一个客户端 + 一条订阅链接，通常比自建 VPS 更省心。
    - 直接看入口与折扣：[#快速注册入口](#register)
 3. 按图文教程完成配置：导入订阅 → 选 `Rule` 模式 → 开启系统代理或 `TUN` → 测速选节点 → 访问测试网站。
-   - 图文教程（含各平台客户端）：[Clash 机场使用图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
+   - 图文教程（含各平台客户端）：[2026 Clash 机场零基础订阅图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
 4. 选购前先把关键概念搞懂（能少踩一半坑）：
-   - [如何挑选优质 Clash 机场（避坑指南）](https://github.com/OpenNetCN/freego/blob/main/choose.md)
-   - [直连/中转/专线（IEPL/IPLC）线路区别](https://github.com/OpenNetCN/freego/blob/main/route.md)
-   - [Vmess/Vless/Trojan/Reality/Hysteria 等协议科普](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
-   - [Clash 机场常用名称解释（名词科普大全）](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
+   - [2026 如何挑选优质 Clash 机场（避坑与选购指南）](https://github.com/OpenNetCN/freego/blob/main/choose.md)
+   - [线路科普：直连/中转/专线（IEPL/IPLC）区别与选择](https://github.com/OpenNetCN/freego/blob/main/route.md)
+   - [协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
+   - [名词科普大全：Clash 机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
 5. 做好备份与冗余：保存订阅链接（不要外泄）、准备至少 2 个可用地区/线路，出问题先按“排障清单”排查。
 
 ---
@@ -294,11 +294,11 @@
 
 #### 推荐阅读（按顺序）
 
-- [Clash 机场使用图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
-- [如何挑选优质 Clash 机场（避坑指南）](https://github.com/OpenNetCN/freego/blob/main/choose.md)
-- [直连/中转/专线（IEPL/IPLC）线路区别](https://github.com/OpenNetCN/freego/blob/main/route.md)
-- [Vmess/Vless/Trojan/Reality/Hysteria 等协议科普](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
-- [Clash 机场常用名称解释（名词科普大全）](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
+- [2026 Clash 机场零基础订阅图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
+- [2026 如何挑选优质 Clash 机场（避坑与选购指南）](https://github.com/OpenNetCN/freego/blob/main/choose.md)
+- [线路科普：直连/中转/专线（IEPL/IPLC）区别与选择](https://github.com/OpenNetCN/freego/blob/main/route.md)
+- [协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
+- [名词科普大全：Clash 机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
 
 如果你只想快速对比机场套餐，可以参考这份榜单（可能包含邀请码/来源参数，是否使用自行判断）：
 
@@ -442,7 +442,7 @@
 
 iOS 常见客户端有 Shadowrocket、Stash 等（多为付费软件，且可能需要外区 Apple ID）。具体安装与配置见图文教程：
 
-- [Clash 机场使用图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
+- [2026 Clash 机场零基础订阅图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
 
 ### 6. 免费科学上网工具能用吗？
 
@@ -451,7 +451,7 @@ iOS 常见客户端有 Shadowrocket、Stash 等（多为付费软件，且可能
 ### 7. 不知道直连/中转/专线、各种协议有什么区别？
 
 - 线路（直连/中转/专线）：[直连、中转、专线 Clash 机场线路原理与选择指南](https://github.com/OpenNetCN/freego/blob/main/route.md)
-- 协议（Vmess/Vless/Trojan/Reality/Hysteria…）：[科普：Clash 机场各种协议的差别与选型建议](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
+- 协议：[协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
 
 ---
 

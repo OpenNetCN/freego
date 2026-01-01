@@ -1,4 +1,4 @@
-# 2025 Clash 机场各种协议差别介绍与选择指南（Vmess / Vless / Trojan / Reality / Hysteria）
+# 2026 Clash 机场各种协议差别介绍与选择指南（Vmess / Vless / Trojan / Reality / Hysteria）
 
 ## Clash 介绍
 
@@ -425,5 +425,5 @@ Reality、Trojan、Vless + TLS 都具备较强伪装能力，是目前科学上�
 
 ## 推荐阅读
 
-- [机场推荐榜单 | 2025科学上网指南 ](https://gptvpnhelper.com/airport-access/)
+- [机场推荐榜单 | 2026科学上网指南 ](https://gptvpnhelper.com/airport-access/)
 - [Clash机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)

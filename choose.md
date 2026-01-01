@@ -1,4 +1,4 @@
-# 2025 如何挑选优质 Clash 机场服务（避坑与选购完整指南）
+# 2026 如何挑选优质 Clash 机场服务（避坑与选购完整指南）
 
 ## 选择 Clash 机场前的准备工作
 
@@ -269,5 +269,5 @@
 
 ## 推荐阅读
 
-- [机场推荐榜单 | 2025科学上网指南 ](https://gptvpnhelper.com/airport-access/)
+- [机场推荐榜单 | 2026科学上网指南 ](https://gptvpnhelper.com/airport-access/)
 - [Clash机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
