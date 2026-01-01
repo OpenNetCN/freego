@@ -1,4 +1,4 @@
-# 2025 Clash 机场零基础订阅图文教程（适合完全新手）
+# 2026 Clash 机场零基础订阅图文教程（适合完全新手）
 
 本教程面向**第一次接触科学上网 / 翻墙的用户**，手把手演示如何通过 **Clash + 机场订阅**，在 Windows、macOS、Android、iOS 上快速配置可用的代理环境。
 
@@ -136,7 +136,7 @@
 
 ---
 
-## 10. 常见问题（FAQ）
+## 11. 常见问题（FAQ）
 
 **Q1: Clash 无法连接节点怎么办？**
 - 检查订阅链接是否正确、未过期；
@@ -169,5 +169,5 @@
 
 ## 推荐阅读
 
-- [机场推荐榜单 | 2025科学上网指南 ](https://gptvpnhelper.com/airport-access/)
+- [机场推荐榜单 | 2026科学上网指南 ](https://gptvpnhelper.com/airport-access/)
 - [Clash机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
