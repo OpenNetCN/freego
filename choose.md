@@ -1,5 +1,9 @@
 # 2026 如何挑选优质 Clash 机场服务（避坑与选购完整指南）
 
+最近更新：2026年01月07日
+
+> 说明：原版 Clash 内核已停更；本文中的 “Clash 机场/Clash 客户端” 泛指规则分流生态的客户端/内核（常见为 `mihomo` / `sing-box` 系）。
+
 ## 选择 Clash 机场前的准备工作
 
 在正式购买或试用任何一家 Clash 机场之前，首先要**弄清楚自己的使用场景和底线要求**。不同用户对速度、稳定性、安全性和兼容性有不同的侧重点，因此必须结合自身情况进行评估，而不是只看「价格和流量」。
@@ -19,13 +23,14 @@
 - Steam、Epic 平台外服联机游戏，或主机平台在线服务（如 PSN、Xbox Live）
 
 ### 是否支持主流协议
-优质 Clash 机场一般会同时支持多种代理协议与核心（Clash / Clash Meta / Sing-box 等），协议越丰富、更新越及时，后续适配和扩展的空间就越大：
-- **VMess**：兼容性广，适合新手。
-- **Shadowsocks（SS）**：轻量、速度快。
-- **Trojan**：基于TLS，更加隐蔽稳定，适合对隐私要求高的用户。
-  确保你选择的机场支持你所需的平台与协议。
+优质机场一般会同时支持多种代理协议与主流内核（常见为 `mihomo` / `sing-box`），协议越丰富、更新越及时，后续适配和扩展空间就越大：
+- **VLESS（含 Reality）**：目前主流，伪装与可用性都较强（取决于具体实现与线路）。
+- **Trojan**：基于 TLS 的 HTTPS 伪装，兼容性好。
+- **VMess**：存量多、兼容性广，但新机场更倾向 VLESS/Trojan。
+- **Shadowsocks（SS）**：轻量、速度快，适合路由器/移动端，但在高审查环境下需要更强伪装方案配合。
+确保你选择的机场支持你所需的平台与协议，并确认你的客户端/内核能“真正支持”对应协议（尤其是 Reality/TUIC/Hysteria2）。
 
-### [科普: Clash机场各种协议的差别介绍](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
+### [科普: Clash机场各种协议的差别介绍](./protocols.md)
 
 ---
 
@@ -40,7 +45,7 @@
 
 ### 支持的协议类型
 - 查看是否支持 Vmess / Vless / Trojan / Shadowsocks / Hysteria / Reality 等主流协议，支持越多，适配不同客户端就越容易；
-- 特别注意是否支持新一代 Clash Meta / Sing-box 核心，便于后续使用 TUIC、Hysteria2、Reality 等新协议；
+- 特别注意是否支持 `mihomo` / `sing-box` 等主流内核生态，便于使用 TUIC、Hysteria2、Reality 等新协议；
 - 对 AI、游戏、远程办公有需求的用户，优先考虑支持 UDP、Reality、Hysteria 系列协议的机场。
 
 ### 月流量与价格性价比
@@ -53,7 +58,7 @@
 - 适合高频使用者、跨境工作者、视频创作者或重度流媒体用户；
 - 价格通常更高，可结合自身预算选择是否有必要「一步到位」。
 
-### [分不清各种线路的区别,点击这里讲透直连,中转,专线机场的差异](https://github.com/OpenNetCN/freego/blob/main/route.md)
+### [分不清各种线路的区别,点击这里讲透直连,中转,专线机场的差异](./route.md)
 
 
 ### 客服响应速度与服务态度
@@ -132,10 +137,9 @@
 - 是否提供平台适配教程、客户端下载一站式支持。
 
 ### 软件工具推荐
-- Clash for Windows (CFW)
-- Clash Verge / Verge Reborn
-- Clash.Meta GUI 客户端
-- Shadowrocket（iOS），Surfboard（macOS/iOS）
+- Windows/macOS：优先选择标注 `Meta/Mihomo` 的客户端（如 Clash Verge、Mihomo Party、ClashX Meta 等）
+- Android：Clash Meta for Android 等支持 `mihomo` 内核的客户端
+- iOS：Shadowrocket、Stash、Loon、Surge 等（多为付费，且可能需要外区 Apple ID）
 
 ---
 
@@ -215,8 +219,8 @@
 ## Clash机场的法律与合规性问题
 
 ### 使用机场的法律边界
-- 中国大陆对VPN/科学上网工具的使用有限制，用户应注意合规风险。
-- 个人使用一般不会被追责，但提供翻墙服务的行为属于违法行为。
+- 中国大陆对 VPN/代理工具与国际联网有监管要求，使用与传播均存在合规风险与不确定性。
+- 严禁搭建/转售/传播未经许可的代理服务与节点信息；本文不构成法律建议，请自行了解并遵守所在地法律法规。
 
 ### 如何降低法律风险
 - 不要公开分享机场信息或订阅链接
@@ -224,8 +228,8 @@
 - 不将机场用于非法用途（如攻击网站、传播非法内容）
 
 ### 关于支付方式
-- 推荐使用虚拟支付方式如 USDT、TronLink、PayPal（非实名）以保护隐私
-- 避免绑定国内实名账户进行机场充值
+- 尽量选择隐私暴露更少的支付方式（如加密货币、虚拟卡等，视平台支持情况而定）
+- 避免在不信任的平台绑定敏感信息（实名账户、主邮箱、常用支付渠道等）
 
 ---
 
@@ -270,4 +274,4 @@
 ## 推荐阅读
 
 - [机场推荐榜单 | 2026科学上网指南 ](https://gptvpnhelper.com/airport-access/)
-- [Clash机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
+- [Clash机场常用名称解释](./mingci.md)

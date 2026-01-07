@@ -1,4 +1,8 @@
-# 2026 Clash 机场各种协议差别介绍与选择指南（Vmess / Vless / Trojan / Reality / Hysteria）
+# 2026 Clash 机场各种协议差别介绍与选择指南（Vmess / Vless / Trojan / Reality / Hysteria2）
+
+最近更新：2026年01月07日
+
+> 说明：原版 Clash 内核已停更；本文里的 “Clash” 泛指规则分流生态的客户端/内核（常见为 `mihomo` / `sing-box`）。不同内核对协议（Reality/TUIC/Hysteria2 等）的支持程度不完全一致。
 
 ## Clash 介绍
 
@@ -14,17 +18,17 @@ Clash 是一款跨平台的规则化网络代理客户端，主要用于科学�
 
 ## Clash 支持的协议概览（总览图先看这里）
 
-Clash 支持众多主流代理协议，使其可以适配不同类型的机场服务与传输需求。常见协议包括：
+规则分流生态可覆盖多种代理协议与传输方式，但“是否能用”最终取决于你使用的内核版本、客户端实现、以及机场的落地方式。常见协议包括：
 
 - Vmess（V2Ray 核心协议）
 - Vless（更轻量的无状态版本）
 - Shadowsocks（SS）
-- ShadowsocksR（SSR）
+- ShadowsocksR（SSR，存量/逐步淘汰）
 - Trojan
 - SOCKS5
 - HTTP(S) 代理
-- Hysteria / TUIC（基于 UDP 的高性能协议）
-- Reality（新一代伪装式抗审查协议）
+- Hysteria2 / TUIC（基于 UDP 的高性能协议）
+- Reality（常见为 VLESS + Reality 组合，用于更强伪装/抗探测）
 
 ### 协议对比简表（基础）
 
@@ -34,7 +38,8 @@ Clash 支持众多主流代理协议，使其可以适配不同类型的机场�
 | Vless      | 无（需TLS）| 强       | 支持    | 高     | 高     |
 | Shadowsocks| 有         | 弱       | 支持    | 中     | 中     |
 | Trojan     | TLS        | 强       | 支持    | 高     | 高     |
-| Hysteria   | QUIC+UDP   | 中       | 强      | 中     | 高     |
+| Hysteria2  | QUIC+UDP   | 中       | 强      | 中     | 高     |
+| TUIC       | TLS+UDP    | 中       | 强      | 中     | 高     |
 | Reality    | TLS+X25519 | 极强     | 支持    | 极高   | 极高   |
 
 ## Vmess
@@ -262,9 +267,9 @@ Reality 是由 V2Ray 项目的衍生版本 Xray-core 所推出的新一代抗审
 - 配置复杂，对服务器要求高。
 - 客户端需使用兼容 Reality 的 Xray 核心。
 
-## Hysteria
+## Hysteria / Hysteria2
 
-Hysteria 是一款基于 UDP、专为高延迟网络优化的代理协议。尤其适用于游戏加速、海外远程访问等场景。
+Hysteria 系列是一类基于 UDP/QUIC、专为复杂网络优化的协议。当前更常见的是 **Hysteria2**（新版本），部分机场仍可能保留旧版 Hysteria 作为兼容选项。
 
 ### 协议特性
 
@@ -288,7 +293,7 @@ Hysteria 是一款基于 UDP、专为高延迟网络优化的代理协议。尤�
 
 ## TUIC
 
-TUIC 是近年来新兴的代理协议，主打基于 UDP 的高性能加密传输，被视为 Hysteria 的“竞品”。
+TUIC 是近年来新兴的代理协议，主打基于 UDP 的高性能加密传输，常被视为 Hysteria2 的“竞品”。
 
 ### 协议概述
 
@@ -296,9 +301,9 @@ TUIC 是近年来新兴的代理协议，主打基于 UDP 的高性能加密传�
 - 具备多路复用、0-RTT 建连等先进特性。
 - 更注重稳定性与安全性。
 
-### Hysteria vs TUIC
+### Hysteria2 vs TUIC
 
-| 特性             | Hysteria       | TUIC           |
+| 特性             | Hysteria2      | TUIC           |
 |------------------|----------------|----------------|
 | 协议基础         | UDP + TLS      | QUIC + TLS     |
 | 多路复用         | 支持           | 更强           |
@@ -310,7 +315,7 @@ TUIC 是近年来新兴的代理协议，主打基于 UDP 的高性能加密传�
 
 - TUIC 更适合严苛环境下的长时间稳定连接。
 - 若对传输质量要求极高，建议优先选择 TUIC。
-- 若需求为低延迟响应，则 Hysteria 依然有优势。
+- 若需求为低延迟响应，则 Hysteria2 依然可能有优势（仍取决于入口与线路质量）。
 
 ---
 
@@ -366,9 +371,9 @@ proxies:
 
 ### 常见问题
 
-- Clash Premium 版本才能支持 TUIC、Reality、Hysteria 等新协议。
-- 某些协议（如 XTLS）不兼容特定客户端，如 Clash Meta。
-- 注意填写正确的 ServerName 与路径字段，避免 handshake 失败。
+- Reality/TUIC/Hysteria2 等新协议依赖“内核支持 + 客户端实现”，优先使用较新的 `mihomo` / `sing-box` 内核与对应前端。
+- 同一协议在不同订阅/客户端里字段可能不一致（如 `sni/servername`、`alpn`、`flow`、`udp`），导入后建议对照机场面板参数核对。
+- 注意填写正确的 `servername(SNI)`、路径（如 WS/gRPC）、以及是否需要跳过证书校验，避免 TLS handshake 失败。
 
 ## 对比总结
 
@@ -381,7 +386,7 @@ proxies:
 | Trojan    | TLS  | 是  | 支持     | 高     | 高     | 高安全HTTPS伪装需求 |
 | SS        | 有   | 是  | 无       | 低     | 中     | 简洁代理、移动设备   |
 | SSR       | 有   | 是  | 无       | 中     | 中     | 高封锁环境绕墙       |
-| Hysteria  | TLS  | 是  | 支持     | 中     | 高     | 游戏、实时通信       |
+| Hysteria2 | TLS  | 是  | 支持     | 中     | 高     | 游戏、实时通信       |
 | TUIC      | TLS  | 是  | 强       | 中     | 高     | 高稳定性传输         |
 | Reality   | TLS  | 是  | 支持     | 极高   | 极高   | 抗审查、极限伪装     |
 | SOCKS5    | 无   | 是  | 无       | 低     | 低     | 内网、本地中转       |
@@ -392,22 +397,22 @@ proxies:
 ### 协议选择建议
 
 - **新手用户**：推荐使用 Trojan + TLS 或 Vless + TLS，兼顾安全与隐蔽。
-- **老用户/折腾党**：建议尝试 Reality（需 Clash Premium）或 TUIC，拥有最前沿性能。
-- **游戏加速**：优先选择 Hysteria 或 TUIC，优化 UDP 丢包问题。
+- **老用户/折腾党**：优先尝试 VLESS + Reality、TUIC、Hysteria2（前提是机场与客户端/内核支持）。
+- **游戏加速**：优先选择 Hysteria2 或 TUIC，改善 UDP 丢包与抖动（效果也强依赖线路质量）。
 - **轻量配置**：Shadowsocks 仍具价值，适用于移动设备或路由器。
 
 ### 后续发展趋势
 
 - Reality 正在快速普及，或将成为主流抗审查协议。
-- QUIC/UDP 类协议（如 TUIC、Hysteria）将在流媒体与高性能网络中占据优势。
-- Clash 核心与 Meta、Premium 版本的生态逐渐分化，需关注官方兼容性更新。
+- QUIC/UDP 类协议（如 TUIC、Hysteria2）会在流媒体与高性能场景中更常见，但“是否稳定”仍取决于机场的入口/落地与运维。
+- 客户端生态会继续向 `mihomo` / `sing-box` 收敛：前者偏 “Clash 配置 + 规则分流”，后者偏 “多协议/多形态”。
 
 ---
 
 ## FAQs
 
-**1. Clash Premium 与 Clash Meta 有什么区别？**  
-Clash Premium 支持更多新协议如 TUIC、Reality、Hysteria，Meta 更侧重快速开发更新，二者配置兼容性略有不同。
+**1. 为什么有的客户端能用 Reality/TUIC/Hysteria2，有的不能？**  
+本质是“内核能力”不同：有的客户端内置 `mihomo`，有的用 `sing-box`，也有的仍是老内核；同名客户端不同版本也可能差异很大。
 
 **2. 为什么我的 Vless 节点连接失败？**  
 检查 servername、UUID、端口是否正确，同时确认 TLS 是否启用，并确保服务器端配置无误。
@@ -419,11 +424,11 @@ Reality、Trojan、Vless + TLS 都具备较强伪装能力，是目前科学上�
 可以，但在高级审查环境中容易被识别，适合轻度使用或配合插件增强。
 
 **5. Clash 是否支持移动端？**  
-是，Clash 有 Clash for Android、Stash (iOS)、Shadowrocket (iOS) 等多款兼容客户端。
+是。移动端常见方案包括 Android 的 `mihomo` 系客户端、以及 iOS 的 Shadowrocket/Stash/Loon/Surge 等（以客户端实际支持的协议为准）。
 
 ---
 
 ## 推荐阅读
 
 - [机场推荐榜单 | 2026科学上网指南 ](https://gptvpnhelper.com/airport-access/)
-- [Clash机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
+- [Clash机场常用名称解释](./mingci.md)
