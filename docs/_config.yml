@@ -1,5 +1,9 @@
 theme: jekyll-theme-cayman
 title: 2026 保姆级科学上网/魔法上网教程 | VPN / Clash 机场 / VPS 全面解析
 description: 2026 最新科学上网教程，系统讲解 Clash 机场、VPN、自建 VPS 使用与选购，从 0 到 1 手把手教你突破网络封锁，畅游 Google、YouTube、ChatGPT 等国际互联网服务。
+lang: zh-CN
+locale: zh_CN
+timezone: Asia/Shanghai
+repo_url: https://github.com/OpenNetCN/freego
 plugins:
   - jekyll-seo-tag

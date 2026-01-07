@@ -8,7 +8,7 @@
 
 > ⭐ **觉得有帮助？点个 Star⭐  鼓励我持续更新更多科学上网/Clash 机场/VPN 干货！**  
 
-最近更新：2026年01月01日
+最近更新：2026年01月07日
 
 ---
 
@@ -55,7 +55,7 @@
   Wikipedia、Google Scholar、Archive.org、JSTOR、ResearchGate
 
 - **AI 工具**：  
-  ChatGPT、Gemini（原 Bard）、Copilot、Claude、Perplexity AI
+  ChatGPT、Gemini、Copilot、Claude、Perplexity AI
 
 - **流媒体服务**：  
   Netflix、Disney+、Max（HBO Max）、Amazon Prime Video、Hulu
@@ -98,7 +98,7 @@
 一旦成功突破网络封锁，用户便可无障碍访问全球互联网中的各种服务与平台，包括但不限于：
 
 - **通信与办公**：Gmail、Outlook、Slack、Zoom、Google Docs、Dropbox
-- **AI 工具**：ChatGPT、Gemini（原 Bard）、Claude、Midjourney、Notion AI
+- **AI 工具**：ChatGPT、Gemini、Claude、Midjourney、Notion AI
 - **云服务与开发平台**：GitHub、AWS、Google Cloud、Heroku
 - **学术研究**：Google Scholar、arXiv、JSTOR、SpringerLink
 - **媒体与资讯**：BBC、纽约时报、华盛顿邮报、The Verge、NPR
@@ -147,14 +147,15 @@
 
 1. 明确你的主要用途：AI（ChatGPT/Claude）、学术资料、远程办公、流媒体、游戏。用途会决定你更需要“地区/IP/线路/延迟/稳定性”里的哪一项。
 2. 新手首选 **Clash（规则分流）+ 机场订阅**：一个客户端 + 一条订阅链接，通常比自建 VPS 更省心。
+   - 说明：原版 Clash 内核早已停更；本文中的 “Clash” 泛指兼容该规则分流生态的客户端/内核（如 `mihomo`/`sing-box` 等）。
    - 直接看入口与折扣：[#快速注册入口](#register)
 3. 按图文教程完成配置：导入订阅 → 选 `Rule` 模式 → 开启系统代理或 `TUN` → 测速选节点 → 访问测试网站。
-   - 图文教程（含各平台客户端）：[2026 Clash 机场零基础订阅图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
+   - 图文教程（含各平台客户端）：[2026 Clash 机场零基础订阅图文教程：订阅导入到测速](./clash.md)
 4. 选购前先把关键概念搞懂（能少踩一半坑）：
-   - [2026 如何挑选优质 Clash 机场（避坑与选购指南）](https://github.com/OpenNetCN/freego/blob/main/choose.md)
-   - [线路科普：直连/中转/专线（IEPL/IPLC）区别与选择](https://github.com/OpenNetCN/freego/blob/main/route.md)
-   - [协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
-   - [名词科普大全：Clash 机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
+   - [2026 如何挑选优质 Clash 机场（避坑与选购指南）](./choose.md)
+   - [线路科普：直连/中转/专线（IEPL/IPLC）区别与选择](./route.md)
+   - [协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](./protocols.md)
+   - [名词科普大全：Clash 机场常用名称解释](./mingci.md)
 5. 做好备份与冗余：保存订阅链接（不要外泄）、准备至少 2 个可用地区/线路，出问题先按“排障清单”排查。
 
 ---
@@ -294,11 +295,11 @@
 
 #### 推荐阅读（按顺序）
 
-- [2026 Clash 机场零基础订阅图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
-- [2026 如何挑选优质 Clash 机场（避坑与选购指南）](https://github.com/OpenNetCN/freego/blob/main/choose.md)
-- [线路科普：直连/中转/专线（IEPL/IPLC）区别与选择](https://github.com/OpenNetCN/freego/blob/main/route.md)
-- [协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
-- [名词科普大全：Clash 机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
+- [2026 Clash 机场零基础订阅图文教程：订阅导入到测速](./clash.md)
+- [2026 如何挑选优质 Clash 机场（避坑与选购指南）](./choose.md)
+- [线路科普：直连/中转/专线（IEPL/IPLC）区别与选择](./route.md)
+- [协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](./protocols.md)
+- [名词科普大全：Clash 机场常用名称解释](./mingci.md)
 
 如果你只想快速对比机场套餐，可以参考这份榜单（可能包含邀请码/来源参数，是否使用自行判断）：
 
@@ -442,7 +443,7 @@
 
 iOS 常见客户端有 Shadowrocket、Stash 等（多为付费软件，且可能需要外区 Apple ID）。具体安装与配置见图文教程：
 
-- [2026 Clash 机场零基础订阅图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
+- [2026 Clash 机场零基础订阅图文教程：订阅导入到测速](./clash.md)
 
 ### 6. 免费科学上网工具能用吗？
 
@@ -450,8 +451,8 @@ iOS 常见客户端有 Shadowrocket、Stash 等（多为付费软件，且可能
 
 ### 7. 不知道直连/中转/专线、各种协议有什么区别？
 
-- 线路（直连/中转/专线）：[直连、中转、专线 Clash 机场线路原理与选择指南](https://github.com/OpenNetCN/freego/blob/main/route.md)
-- 协议：[协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
+- 线路（直连/中转/专线）：[直连、中转、专线 Clash 机场线路原理与选择指南](./route.md)
+- 协议：[协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](./protocols.md)
 
 ---
 
@@ -474,7 +475,7 @@ iOS 常见客户端有 Shadowrocket、Stash 等（多为付费软件，且可能
 - [Amazon Prime Video](https://www.primevideo.com) – 亚马逊会员专属影视平台
 
 ### 💬 社交与社区
-- [Twitter (X)](https://twitter.com) – 全球热点信息首发平台
+- [Twitter (X)](https://x.com) – 全球热点信息首发平台
 - [Facebook](https://www.facebook.com) – 世界最大社交网络
 - [Reddit](https://www.reddit.com) – 海外社区讨论中心，话题广泛
 - [Instagram](https://www.instagram.com) – 图片/短视频分享平台
@@ -494,7 +495,7 @@ iOS 常见客户端有 Shadowrocket、Stash 等（多为付费软件，且可能
 
 ### 🤖 AI 与生产力工具
 - [ChatGPT](https://chatgpt.com) – 对话式 AI 智能助手
-- [Gemini (原 Bard)](https://gemini.google.com) – Google 推出的 AI 工具
+- [Gemini](https://gemini.google.com) – Google 推出的 AI 工具
 - [Claude](https://claude.ai) – Anthropic 公司出品的大模型助手
 - [Perplexity AI](https://www.perplexity.ai) – 问答型 AI 搜索引擎
 - [Notion](https://www.notion.so) – 效率工具，可做笔记/知识库/项目管理

@@ -1,5 +1,9 @@
 # Clash 机场专用名词解释字典（终极指南｜V2Ray / Vless / Trojan / Reality 全面科普）
 
+最近更新：2026年01月07日
+
+> 说明：原版 Clash（Dreamacro）内核已停更；本文中的 “Clash” 多指规则分流生态的客户端/内核（常见为 `mihomo` / `sing-box`）。
+
 ## 1. 引言
 
 ### Clash 机场与科学上网概述
@@ -18,18 +22,19 @@ Clash 及其相关配置较为专业，涉及大量技术术语，如「Vmess」
 
 ### Clash是什么？
 
-Clash 是一个基于 Go 语言编写的规则驱动代理客户端，支持多种协议（如 Vmess、Vless、Trojan、Shadowsocks）。它允许用户通过配置文件，自定义规则进行流量分流、广告过滤、协议转换等操作，是目前科学上网领域最强大的工具之一。
+Clash 是一类“规则驱动”的代理客户端生态：通过规则把不同网站/应用的流量分配到不同节点（或直连），实现自动分流、策略组切换、DNS 防污染等功能。
 
-### Clash与Clash for Windows、Clash Verge、Clash Meta的区别
+### 内核与客户端（2026 现状）
 
-| 软件名称 | 平台 | 特点 |
-|----------|------|------|
-| **Clash core** | 多平台 | 基础核心，命令行运行 |
-| **Clash for Windows (CFW)** | Windows | 图形化界面，适合新手 |
-| **Clash Verge** | Windows/macOS/Linux | 界面美观、支持Meta内核 |
-| **Clash Meta** | 多平台 | 新一代核心，支持更多协议如Reality、Hysteria2 |
+| 名称 | 类型 | 平台 | 说明 |
+|---|---|---|---|
+| **Mihomo（原 Clash.Meta）** | 内核 | 多平台 | 主流内核之一，协议支持更新更快（Reality/TUIC/Hysteria2 等取决于版本） |
+| **Sing-box** | 内核 | 多平台 | 另一主流内核，协议覆盖面广，常见于多协议客户端 |
+| **Clash Verge / Mihomo Party / ClashX Meta** | 客户端（前端） | Windows/macOS | 通常内置 `mihomo`，提供 GUI、策略组、TUN 等功能 |
+| **Clash Meta for Android** | 客户端（前端） | Android | 常见的 `mihomo` 系移动端方案 |
+| **Clash for Windows（CFW）** | 客户端（历史） | Windows | 早期常用，但长期停更；不建议作为 2026 新手首选 |
 
-用户可根据自身需求选择合适的前端界面与核心版本。
+选择建议：优先选“仍在维护 + 支持你需要协议 + 支持 `TUN`”的客户端/内核组合。
 
 ---
 
@@ -174,7 +179,7 @@ proxy-groups:
 
 Tun模式可将系统层级所有应用的流量“透明接管”至Clash，实现比传统HTTP/HTTPS代理更强的全局穿透能力。尤其适用于不支持手动设置代理的游戏、软件或系统级服务。
 
-#### Clash Meta启用Tun示例：
+#### Mihomo 启用 TUN 示例：
 
 ```yaml
 tun:
@@ -186,9 +191,9 @@ tun:
 
 ### 系统代理设置方式
 
-- **Windows**：Clash for Windows 启动后自动设置系统代理。
+- **Windows/macOS**：大多数客户端支持“一键开启系统代理”，用于让浏览器/大部分软件走代理。
 - **macOS/Linux**：需手动设置系统网络偏好中的HTTP和Socks代理。
-- **Android**：Magisk模块（如Clash for Android内核）或VPN模式实现流量接管。
+- **Android/iOS**：通常通过“VPN 模式”接管流量（客户端会提示授权）。
 
 ---
 
@@ -196,16 +201,15 @@ tun:
 
 ### Clash Dashboard控制面板
 
-Clash运行时会暴露本地控制接口（REST API + Web GUI）。常见的Dashboard有两种：
+Clash 生态运行时通常会暴露本地控制接口（REST API + Web GUI）。常见的 Dashboard 方案有：
 
-1. **CFW自带面板**（默认本地127.0.0.1:9090）
-2. **Yacd 面板**：简洁易用的第三方前端，可直接接入Clash配置。
+1. **Yacd 面板**：经典 Web 面板，可接入多数 Clash 系内核
+2. **MetaCubeXD 等面板**：对 `mihomo` 生态更友好（以面板/内核版本为准）
 
-### 使用Yacd、Meta-Yacd、ClashN等工具
+### 使用 Yacd 等工具
 
 - **Yacd**：最轻量的Web控制面板，支持实时切换节点、查看规则。
-- **Meta-Yacd**：适配Clash.Meta的Yacd改版，支持Reality协议。
-- **ClashN**：Windows下的Clash客户端集成界面，适合进阶用户。
+- 不同面板对新协议/新字段的支持程度不同，遇到显示异常时优先升级客户端/内核与面板版本。
 
 ---
 
@@ -223,10 +227,10 @@ Clash运行时会暴露本地控制接口（REST API + Web GUI）。常见的Das
 | 协议 | 特点 | 常用于 |
 |------|------|--------|
 | **TLS** | 标准加密传输层协议，支持HTTPS伪装 | Trojan, Vmess |
-| **XTLS** | 特殊加密技术，提升传输性能 | Vless (Reality协议) |
+| **XTLS / Vision** | Xray 体系的传输增强（常见为 `flow: xtls-rprx-vision`），强调性能与抗干扰 | VLESS（部分实现） |
 | **gRPC** | 谷歌提出的高性能协议，基于HTTP/2 | Trojan/Vless中继传输 |
 | **H2 (HTTP/2)** | 低延迟、高并发连接 | Trojan, Vless, Reality |
-| **Reality** | 新型XTLS替代方案，具备防探测、伪装能力 | Clash Meta支持 |
+| **Reality** | 常见为 VLESS + Reality 组合（Xray 体系），用于更强伪装/抗探测 | 取决于内核与客户端是否支持 |
 
 ---
 
@@ -369,7 +373,7 @@ Clash运行时会暴露本地控制接口（REST API + Web GUI）。常见的Das
 ### 日志查看与调试技巧
 
 - Clash GUI面板通常提供日志窗口，查看节点连接状态。
-- `Clash.Meta` 和 `CFW` 都支持 `verbose` 日志级别，用于排查连接细节。
+- 多数客户端/内核都支持将日志级别调到 `verbose`（或类似选项），用于排查连接细节。
 - 使用 `ping`、`tracert`、`curl` 等命令测试网络连通性。
 - 可查看 `/log` 或终端返回的握手信息定位问题源头。
 
@@ -445,7 +449,7 @@ DNS泄漏会暴露你的真实访问目的地，即便你使用代理，也可�
 
 Clash不仅仅是一个翻墙工具，它是一整套高度灵活、功能强大的网络流量控制平台。随着协议发展与网络监管变化，Clash社区不断更新核心和配置方式。建议用户持续关注以下内容：
 
-- Clash 核心更新（如 Meta、Premium 支持 Reality、Hysteria2）
+- Clash 内核/客户端更新（如 `mihomo` / `sing-box` 对 Reality、TUIC、Hysteria2 等的支持变化）
 - 新兴协议与加密算法（如 uTLS、gQUIC）
 - 社区维护规则集和配置模板（如lhie1、ACL4SSR、DivineEngine）
 
@@ -453,8 +457,8 @@ Clash不仅仅是一个翻墙工具，它是一整套高度灵活、功能强大
 
 | 名称 | 链接 | 说明 |
 |------|------|------|
-| Clash GitHub | https://github.com/Dreamacro/clash | 官方核心项目 |
-| Clash.Meta | https://github.com/MetaCubeX | Meta 版本维护 |
+| Clash（Dreamacro） | https://github.com/Dreamacro/clash | 原版核心项目（历史/已停更） |
+| Mihomo（原 Clash.Meta） | https://github.com/MetaCubeX/mihomo | 主流内核维护仓库 |
 | Yacd 控制面板 | https://github.com/haishanh/yacd | Web控制前端 |
 | ACL4SSR 规则集 | https://github.com/ACL4SSR/ACL4SSR | 分流规则集合 |
 | Telegram 频道 | 搜索：Clash 中文频道 | 社区交流与机场评测 |
