@@ -244,7 +244,7 @@
 | 银河云 | Trojan 专线，预算党主力/备用 | 长期 8 折 / 85 折（部分套餐除外） | 长期 | `gptvpnhelper80` / `gptvpnhelper85` | Trojan + IEPL 专线 | [立即注册](https://inv03.galaxyaff.cc/register?aff=tcOd0ob7) |
 | 百变小樱 | 3 天免费试用，新手应急 | 3 天免费 + 95 折 | 长期 | `bbxy-5th` | 三网 IEPL 专线 | [立即注册](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=FFHk) |
 | 贝贝云 | 低门槛入门，日常稳连 | 95 折（新手福利） | 长期 | `beibei.cloud` | 江苏隧道中转线路 | [立即注册](https://888.2beibei.com/register?code=Oa86Fbs3) |
-| WgetCloud | 企业级在线率，重度/团队优选 | 新用户 85 折 | 长期 | 注册赠送 85 折券 | BGP 中转 + IEPL 专线 | [立即注册](https://invite.wgetcloud.ltd/auth/register?code=xEgJKS) |
+| WgetCloud | 企业级在线率，重度/团队优选 | 新用户 85 折 | 长期 | 注册赠送 85 折券 | BGP 中转 + IEPL 专线 | [立即注册](https://invite.wgetcloud.ltd/auth/register?code=kVJQPh) |
 
 \* 以官方公告与结算页展示为准，若活动调整请以官网提示为准。
 
@@ -271,7 +271,7 @@
 
 - 适合：稳定性优先、多人/团队使用、对在线率与服务响应有要求
 - 建议：有高峰期需求时优先选择中转/专线类线路，按业务准备备用线路
-- 注册入口： [WgetCloud](https://invite.wgetcloud.ltd/auth/register?code=xEgJKS)
+- 注册入口： [WgetCloud](https://invite.wgetcloud.ltd/auth/register?code=kVJQPh)
 
 <a id="free"></a>
 ##### 百变小樱（偏新手试用与应急）
