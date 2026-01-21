@@ -1,8 +1,8 @@
 # 2026 Clash 机场各种协议差别介绍与选择指南（Vmess / Vless / Trojan / Reality / Hysteria2）
 
-最近更新：2026年01月07日
+最近更新：2026-01-21
 
-> 说明：原版 Clash 内核已停更；本文里的 “Clash” 泛指规则分流生态的客户端/内核（常见为 `mihomo` / `sing-box`）。不同内核对协议（Reality/TUIC/Hysteria2 等）的支持程度不完全一致。
+> 说明：原版 Clash（`Dreamacro/clash`）项目已基本停止维护；本文里的 “Clash” 泛指规则分流生态的客户端/内核（常见为 `mihomo` / `sing-box`）。不同内核对协议（Reality/TUIC/Hysteria2 等）的支持程度不完全一致。
 
 ## Clash 介绍
 
