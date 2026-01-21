@@ -224,7 +224,7 @@ description: 2026 最新科学上网教程：系统讲解 Clash（规则分流�
 | 青云梯 | 老牌稳定，智能分流 | 年付及以上 8 折 / 其他 85 折（部分套餐除外） | 长期 | `gptvpnhelper80` / `gptvpnhelper85` | 企业级 IPLC 专线 | [立即注册](https://realvtest.qytvipaff.cc/register?aff=zcIlh0VY) |
 | 银河云 | Trojan 专线，预算党主力/备用 | 长期 8 折 / 85 折（部分套餐除外） | 长期 | `gptvpnhelper80` / `gptvpnhelper85` | Trojan + IEPL 专线 | [立即注册](https://inv03.galaxyaff.cc/register?aff=tcOd0ob7) |
 | 百变小樱 | 3 天免费试用，新手应急 | 3 天免费 + 95 折 | 长期 | `bbxy-5th` | 三网 IEPL 专线 | [立即注册](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=FFHk) |
-| 贝贝云 | 低门槛入门，日常稳连 | 95 折（新手福利） | 长期 | `beibei.cloud` | 江苏隧道中转线路 | [立即注册](https://beibeilink.top/register?code=Oa86Fbs3) |
+| 贝贝云 | 低门槛入门，日常稳连 | 95 折（新手福利） | 长期 | `beibei.cloud` | 江苏隧道中转线路 | [立即注册](https://888.2beibei.com/register?code=Oa86Fbs3) |
 | WgetCloud | 企业级在线率，重度/团队优选 | 新用户 85 折 | 长期 | 注册赠送 85 折券 | BGP 中转 + IEPL 专线 | [立即注册](https://invite.wgetcloud.ltd/auth/register?code=xEgJKS) |
 
 \* 以官方公告与结算页展示为准，若活动调整请以官网提示为准。
@@ -266,7 +266,7 @@ description: 2026 最新科学上网教程：系统讲解 Clash（规则分流�
 
 - 适合：预算有限、需要备用线路、对极致解锁需求不高的日常使用
 - 建议：把它们当“备份通道”，和主力机场搭配使用，避免单点故障
-- 注册入口： [银河云](https://inv03.galaxyaff.cc/register?aff=tcOd0ob7)（`gptvpnhelper80` / `gptvpnhelper85`） / [贝贝云](https://beibeilink.top/register?code=Oa86Fbs3)（`beibei.cloud`）
+- 注册入口： [银河云](https://inv03.galaxyaff.cc/register?aff=tcOd0ob7)（`gptvpnhelper80` / `gptvpnhelper85`） / [贝贝云](https://888.2beibei.com/register?code=Oa86Fbs3)（`beibei.cloud`）
 
 <a id="troubleshoot"></a>
 #### 关键设置与排障要点（通用）
