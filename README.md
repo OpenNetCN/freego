@@ -8,7 +8,7 @@
 
 > ⭐ **觉得有帮助？点个 Star⭐  鼓励我持续更新更多科学上网/Clash 机场/VPN 干货！**  
 
-最近更新：2026年01月07日
+最近更新：2026-01-21
 
 ---
 
@@ -25,12 +25,15 @@
 - [为什么在中国需要科学上网？](#为什么在中国需要科学上网)
 - [科学上网之后可以做什么？](#科学上网之后可以做什么)
 - [快速开始（3分钟）](#快速开始3分钟)
+- [快速注册入口](#register)
 - [科学上网的主要方式对比](#科学上网的主要方式对比)
 - [三种方式的对比与选择建议](#三种方式的对比与选择建议)
+- [关键设置与排障要点（通用）](#troubleshoot)
+- [推荐阅读（按顺序）](#reading)
 - [安全与隐私（必读）](#安全与隐私必读)
 - [法律与合规风险提示（重要）](#法律与合规风险提示重要)
 - [常见问答（FAQ）](#常见问答faq)
-- [国外常用网站导航](#国外常用网站导航)
+- [国外常用网站导航（独立页）](./sites.md)
 
 ---
 
@@ -43,7 +46,7 @@
 以下是常见受限平台的分类列表：
 
 - **搜索引擎**：  
-  Google、Bing、DuckDuckGo、Yahoo、Startpage
+  Google、DuckDuckGo、Startpage、Yahoo（Bing 在部分网络环境可用性存在波动）
 
 - **视频平台**：  
   YouTube、Twitch、Vimeo、Dailymotion
@@ -147,15 +150,13 @@
 
 1. 明确你的主要用途：AI（ChatGPT/Claude）、学术资料、远程办公、流媒体、游戏。用途会决定你更需要“地区/IP/线路/延迟/稳定性”里的哪一项。
 2. 新手首选 **Clash（规则分流）+ 机场订阅**：一个客户端 + 一条订阅链接，通常比自建 VPS 更省心。
-   - 说明：原版 Clash 内核早已停更；本文中的 “Clash” 泛指兼容该规则分流生态的客户端/内核（如 `mihomo`/`sing-box` 等）。
+   - 说明：原版 Clash（`Dreamacro/clash`）项目已基本停止维护；本文中的 “Clash” 泛指兼容该规则分流生态的客户端/内核（如 `mihomo`（原 Clash.Meta 生态）、`sing-box` 等）。不同客户端/内核对 `TUN`、脚本、部分新协议等能力支持可能不同。
    - 直接看入口与折扣：[#快速注册入口](#register)
 3. 按图文教程完成配置：导入订阅 → 选 `Rule` 模式 → 开启系统代理或 `TUN` → 测速选节点 → 访问测试网站。
    - 图文教程（含各平台客户端）：[2026 Clash 机场零基础订阅图文教程：订阅导入到测速](./clash.md)
 4. 选购前先把关键概念搞懂（能少踩一半坑）：
-   - [2026 如何挑选优质 Clash 机场（避坑与选购指南）](./choose.md)
-   - [线路科普：直连/中转/专线（IEPL/IPLC）区别与选择](./route.md)
-   - [协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](./protocols.md)
-   - [名词科普大全：Clash 机场常用名称解释](./mingci.md)
+   - 选购与避坑优先看：[2026 如何挑选优质 Clash 机场（避坑与选购指南）](./choose.md)
+   - 更多技术专题（线路/协议/名词/排障）见下方：[推荐阅读（按顺序）](#reading)
 5. 做好备份与冗余：保存订阅链接（不要外泄）、准备至少 2 个可用地区/线路，出问题先按“排障清单”排查。
 
 ---
@@ -286,6 +287,7 @@
 - 建议：把它们当“备份通道”，和主力机场搭配使用，避免单点故障
 - 注册入口： [银河云](https://inv03.galaxyaff.cc/register?aff=tcOd0ob7)（`gptvpnhelper80` / `gptvpnhelper85`） / [贝贝云](https://beibeilink.top/register?code=Oa86Fbs3)（`beibei.cloud`）
 
+<a id="troubleshoot"></a>
 #### 关键设置与排障要点（通用）
 
 - 日常优先 `Rule` 模式（国内直连、国外走代理），只在“规则不覆盖/业务需要”时临时切 `Global`
@@ -293,6 +295,7 @@
 - DNS 很关键：解析污染/劫持会导致“节点可用但网站打不开/规则命不中”；优先使用客户端内置的安全 DNS / 加密 DNS 方案
 - 订阅更新失败：先检查订阅是否过期、服务商面板是否可访问，再尝试手动更新或重新导入订阅链接
 
+<a id="reading"></a>
 #### 推荐阅读（按顺序）
 
 - [2026 Clash 机场零基础订阅图文教程：订阅导入到测速](./clash.md)
@@ -458,46 +461,5 @@ iOS 常见客户端有 Shadowrocket、Stash 等（多为付费软件，且可能
 
 ## 🌐 国外常用网站导航
 
-以下是整理的一些常用国外网站，涵盖搜索引擎、社交平台、流媒体、学术资源等多个领域，适合日常浏览、学习、工作与娱乐使用。
+为避免 README 过长、并降低后续维护成本，本清单已独立整理为：[`sites.md`](./sites.md)
 
-### 🔍 搜索引擎
-- [Google](https://www.google.com) – 全球最强搜索引擎，信息全面
-- [Bing](https://www.bing.com) – 微软旗下，界面简洁，图像搜索强
-- [DuckDuckGo](https://duckduckgo.com) – 主打隐私保护，不追踪用户行为
-- [Startpage](https://www.startpage.com) – 使用 Google 结果但无隐私追踪
-- [Yahoo](https://www.yahoo.com) – 集新闻、邮箱、搜索于一体
-
-### 📺 视频与流媒体
-- [YouTube](https://www.youtube.com) – 全球最大视频平台
-- [Twitch](https://www.twitch.tv) – 游戏与直播社区
-- [Netflix](https://www.netflix.com) – 高质量剧集电影流媒体服务
-- [Disney+](https://www.disneyplus.com) – 迪士尼旗下流媒体，包含漫威/星战内容
-- [Amazon Prime Video](https://www.primevideo.com) – 亚马逊会员专属影视平台
-
-### 💬 社交与社区
-- [Twitter (X)](https://x.com) – 全球热点信息首发平台
-- [Facebook](https://www.facebook.com) – 世界最大社交网络
-- [Reddit](https://www.reddit.com) – 海外社区讨论中心，话题广泛
-- [Instagram](https://www.instagram.com) – 图片/短视频分享平台
-- [LinkedIn](https://www.linkedin.com) – 海外职业社交首选平台
-
-### 📚 学术与工具
-- [Wikipedia](https://www.wikipedia.org) – 开源百科全书
-- [Google Scholar](https://scholar.google.com) – 免费学术论文搜索引擎
-- [Archive.org](https://archive.org) – 互联网档案馆，保存旧网页/书籍/视频
-- [ResearchGate](https://www.researchgate.net) – 全球科研人员社交与论文交流平台
-- [JSTOR](https://www.jstor.org) – 权威论文与文献数据库
-
-### 💻 开发者与文档
-- [GitHub](https://github.com) – 开源项目与代码托管平台
-- [Stack Overflow](https://stackoverflow.com) – 编程问答社区
-- [MDN Web Docs](https://developer.mozilla.org) – Web 开发权威文档
-
-### 🤖 AI 与生产力工具
-- [ChatGPT](https://chatgpt.com) – 对话式 AI 智能助手
-- [Gemini](https://gemini.google.com) – Google 推出的 AI 工具
-- [Claude](https://claude.ai) – Anthropic 公司出品的大模型助手
-- [Perplexity AI](https://www.perplexity.ai) – 问答型 AI 搜索引擎
-- [Notion](https://www.notion.so) – 效率工具，可做笔记/知识库/项目管理
-
----

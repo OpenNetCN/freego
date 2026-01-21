@@ -1,8 +1,8 @@
 # Clash 机场专用名词解释字典（终极指南｜V2Ray / Vless / Trojan / Reality 全面科普）
 
-最近更新：2026年01月07日
+最近更新：2026-01-21
 
-> 说明：原版 Clash（Dreamacro）内核已停更；本文中的 “Clash” 多指规则分流生态的客户端/内核（常见为 `mihomo` / `sing-box`）。
+> 说明：原版 Clash（`Dreamacro/clash`）项目已基本停止维护；本文中的 “Clash” 多指规则分流生态的客户端/内核（常见为 `mihomo` / `sing-box`）。
 
 ## 1. 引言
 
