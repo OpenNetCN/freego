@@ -246,47 +246,7 @@
 | 贝贝云 | 低门槛入门，日常稳连 | 95 折（新手福利） | 长期 | `beibei.cloud` | 江苏隧道中转线路 | [立即注册](https://888.2beibei.com/register?code=Oa86Fbs3) |
 | WgetCloud | 企业级在线率，重度/团队优选 | 新用户 85 折 | 长期 | 注册赠送 85 折券 | BGP 中转 + IEPL 专线 | [立即注册](https://invite.wgetcloud.ltd/auth/register?code=kVJQPh) |
 
-\* 以官方公告与结算页展示为准，若活动调整请以官网提示为准。
-
-> 提示：上面的链接可能包含邀请码/来源参数，便于统计与后续维护；折扣码是否生效、具体力度以官网结算页为准。
-
-#### ⚡ 快速选择
-
-| 使用场景 | 推荐机场组合 | 立即查看 |
-| --- | --- | --- |
-| ChatGPT / AI 工具重度 | TNTCloud + 小蜜蜂 | [查看 TNTCloud 说明](#tnt) |
-| 流媒体刷剧 / 4K 观影 | 小蜜蜂 / WgetCloud | [查看 WgetCloud 说明](#wgetcloud) |
-| 完全无法使用，先恢复连接 | 百变小樱 3 天免费试用 | [查看免费试用](#free) |
-| 预算有限 / 备用线路 | 银河云 / 贝贝云 | [查看银河云说明](#yinheyun) |
-
-<a id="tnt"></a>
-##### TNTCloud / 小蜜蜂（偏 AI / 解锁体验）
-
-- 适合：ChatGPT/Claude 等 AI 工具、对“地区可用性/原生 IP”比较敏感的人群
-- 建议：优先月付试用，准备 1–2 个备用地区节点；晚高峰用自动测速/故障切换策略组
-- 注册入口： [TNTCloud](https://tanu095.tntvipaff.cc/#/register?code=7MPbfr89)（`Tnt80`） / [小蜜蜂](https://inva.xmfaff.cc/register?aff=oClLBb5A)（`TVX8JfZP`）
-
-<a id="wgetcloud"></a>
-##### WgetCloud（偏稳定与团队）
-
-- 适合：稳定性优先、多人/团队使用、对在线率与服务响应有要求
-- 建议：有高峰期需求时优先选择中转/专线类线路，按业务准备备用线路
-- 注册入口： [WgetCloud](https://invite.wgetcloud.ltd/auth/register?code=kVJQPh)
-
-<a id="free"></a>
-##### 百变小樱（偏新手试用与应急）
-
-- 适合：先“恢复可用”，再慢慢选长期方案
-- 建议：试用阶段把订阅导入 Clash，学会 `Rule` 模式与测速/切换，避免后续换机场不会用
-- 注册入口： [百变小樱](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=FFHk)（`bbxy-5th`）
-
-<a id="yinheyun"></a>
-##### 银河云 / 贝贝云（偏预算与备用）
-
-- 适合：预算有限、需要备用线路、对极致解锁需求不高的日常使用
-- 建议：把它们当“备份通道”，和主力机场搭配使用，避免单点故障
-- 注册入口： [银河云](https://inv03.galaxyaff.cc/register?aff=tcOd0ob7)（`gptvpnhelper80` / `gptvpnhelper85`） / [贝贝云](https://888.2beibei.com/register?code=Oa86Fbs3)（`beibei.cloud`）
-
+---
 <a id="troubleshoot"></a>
 #### 关键设置与排障要点（通用）
 
