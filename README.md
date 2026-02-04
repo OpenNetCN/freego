@@ -8,7 +8,7 @@
 
 > ⭐ **觉得有帮助？点个 Star⭐  鼓励我持续更新更多科学上网/Clash 机场/VPN 干货！**  
 
-最近更新：2026-01-21
+最近更新：2026-02-04
 
 ---
 
@@ -239,7 +239,7 @@
 | 机场 | 核心优势 | 优惠力度 | 截止日期 | 优惠码 | 过境线路 | 快捷跳转 |
 | --- | --- | --- | --- | --- | --- | --- |
 | TNTCloud | 全 IPLC 专线 + 原生 IP，AI 解锁顶级 | 长期 8 折（部分套餐除外） | 长期 | `Tnt80` | 全节点 IPLC 专线 | [立即注册](https://tanu095.tntvipaff.cc/#/register?code=7MPbfr89) |
-| 小蜜蜂机场 | 全 IEPL 性价比，AI/流媒体解锁 | 长期 8 折（部分套餐除外） | 长期 | `TVX8JfZP` | 全节点 IEPL 专线 | [立即注册](https://tangwu095.xmfvipaff01.cc/register?aff=oClLBb5A) |
+| 小蜜蜂机场 | 全 IEPL 性价比，AI/流媒体解锁 | 长期 8 折（部分套餐除外） | 长期 | `TVX8JfZP` | 全节点 IEPL 专线 | [立即注册](https://inva.xmfaff.cc/register?aff=oClLBb5A) |
 | 青云梯 | 老牌稳定，智能分流 | 年付及以上 8 折 / 其他 85 折（部分套餐除外） | 长期 | `gptvpnhelper80` / `gptvpnhelper85` | 企业级 IPLC 专线 | [立即注册](https://realvtest.qytvipaff.cc/register?aff=zcIlh0VY) |
 | 银河云 | Trojan 专线，预算党主力/备用 | 长期 8 折 / 85 折（部分套餐除外） | 长期 | `gptvpnhelper80` / `gptvpnhelper85` | Trojan + IEPL 专线 | [立即注册](https://inv03.galaxyaff.cc/register?aff=tcOd0ob7) |
 | 百变小樱 | 3 天免费试用，新手应急 | 3 天免费 + 95 折 | 长期 | `bbxy-5th` | 三网 IEPL 专线 | [立即注册](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=FFHk) |
@@ -264,7 +264,7 @@
 
 - 适合：ChatGPT/Claude 等 AI 工具、对“地区可用性/原生 IP”比较敏感的人群
 - 建议：优先月付试用，准备 1–2 个备用地区节点；晚高峰用自动测速/故障切换策略组
-- 注册入口： [TNTCloud](https://tanu095.tntvipaff.cc/#/register?code=7MPbfr89)（`Tnt80`） / [小蜜蜂](https://tangwu095.xmfvipaff01.cc/register?aff=oClLBb5A)（`TVX8JfZP`）
+- 注册入口： [TNTCloud](https://tanu095.tntvipaff.cc/#/register?code=7MPbfr89)（`Tnt80`） / [小蜜蜂](https://inva.xmfaff.cc/register?aff=oClLBb5A)（`TVX8JfZP`）
 
 <a id="wgetcloud"></a>
 ##### WgetCloud（偏稳定与团队）
