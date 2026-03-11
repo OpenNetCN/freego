@@ -1,3 +1,8 @@
+---
+title: Clash 机场专用名词解释字典
+description: 整理 Clash、Mihomo、规则集、TUN、Fake-IP、原生 IP 等常见概念，帮助新手快速补齐基础。
+---
+<!-- GitHub Pages mirror of ../mingci.md. Keep both files aligned intentionally. -->
 # Clash 机场专用名词解释字典（终极指南｜V2Ray / Vless / Trojan / Reality 全面科普）
 
 最近更新：2026-03-11

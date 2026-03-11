@@ -1,3 +1,8 @@
+---
+title: 2026 如何挑选优质 Clash 机场服务
+description: 从线路、地区、试用、计费、风险信号和客服响应等维度，系统讲解 Clash 机场的选购与避坑方法。
+---
+<!-- GitHub Pages mirror of ../choose.md. Keep both files aligned intentionally. -->
 # 2026 如何挑选优质 Clash 机场服务（避坑与选购完整指南）
 
 最近更新：2026-03-11
@@ -41,7 +46,7 @@
 
 如果你还分不清线路类型，先补这篇：
 
-- [直连 / 中转 / 专线（IEPL / IPLC）区别与选择](./route.md)
+- [直连 / 中转 / 专线（IEPL / IPLC）区别与选择](./route.html)
 
 ### 2. 地区与出口质量
 
@@ -236,7 +241,7 @@
 
 如果你已经拿到试用，但不知道问题出在客户端、节点还是地区，可直接看：
 
-- [Clash / Mihomo 独立排障指南（按症状排查）](./troubleshooting.md)
+- [Clash / Mihomo 独立排障指南（按症状排查）](./troubleshooting.html)
 
 ## FAQ（常见问题解答）
 
@@ -267,6 +272,6 @@
 
 ## 推荐阅读
 
-- [Clash 机场零基础订阅图文教程](./clash.md)
-- [Clash / Mihomo 独立排障指南（按症状排查）](./troubleshooting.md)
-- [Clash 机场常用名称解释](./mingci.md)
+- [Clash 机场零基础订阅图文教程](./clash.html)
+- [Clash / Mihomo 独立排障指南（按症状排查）](./troubleshooting.html)
+- [Clash 机场常用名称解释](./mingci.html)

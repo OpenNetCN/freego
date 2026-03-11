@@ -1,3 +1,4 @@
+<!-- Intentional mirror: README.md and docs/index.md intentionally keep near-identical content. README serves GitHub, docs/index.md serves GitHub Pages. -->
 # 2026 保姆级科学上网/魔法上网教程：Clash机场 / VPN / 自建 VPS 全面解析
 
 ## 引言：什么是“科学上网”？
@@ -8,7 +9,7 @@
 
 > ⭐ **觉得有帮助？点个 Star⭐  鼓励我持续更新更多科学上网/Clash 机场/VPN 干货！**
 
-最近更新：2026-02-23
+最近更新：2026-03-11
 
 ---
 
@@ -37,17 +38,18 @@
 - [安全与隐私（必读）](#安全与隐私必读)
 - [法律与合规风险提示（重要）](#法律与合规风险提示重要)
 - [常见问答（FAQ）](#常见问答faq)
-- [国外常用网站导航（独立页）](https://github.com/OpenNetCN/freego/blob/main/sites.md)
+- [国外常用网站导航（独立页）](./sites.md)
 
 ---
 
 ## 文档入口（仓库内页）
 
-- 新手从 0 到 1：[2026 Clash 机场零基础订阅图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
-- 机场选购与避坑：[2026 如何挑选优质 Clash 机场（避坑与选购指南）](https://github.com/OpenNetCN/freego/blob/main/choose.md)
-- 线路科普（直连/中转/专线）：[直连/中转/专线（IEPL/IPLC）区别与选择](https://github.com/OpenNetCN/freego/blob/main/route.md)
-- 协议科普（Reality/TUIC/Hysteria2 等）：[协议科普与选型](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
-- 名词解释：[Clash 机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
+- 新手从 0 到 1：[2026 Clash 机场零基础订阅图文教程：订阅导入到测速](./clash.md)
+- 机场选购与避坑：[2026 如何挑选优质 Clash 机场（避坑与选购指南）](./choose.md)
+- 独立排障页：[Clash / Mihomo 常见问题排障指南（按症状排查）](./troubleshooting.md)
+- 线路科普（直连/中转/专线）：[直连/中转/专线（IEPL/IPLC）区别与选择](./route.md)
+- 协议科普（Reality/TUIC/Hysteria2 等）：[协议科普与选型](./protocols.md)
+- 名词解释：[Clash 机场常用名称解释](./mingci.md)
 
 > 提示：这些入口指向仓库文档页（GitHub）便于长期维护；如果你更习惯在本站阅读，可以把链接收藏到浏览器。
 
@@ -190,9 +192,9 @@
    - 说明：原版 Clash（`Dreamacro/clash`）项目已基本停止维护；本文中的 “Clash” 泛指兼容该规则分流生态的客户端/内核（如 `mihomo`（原 Clash.Meta 生态）、`sing-box` 等）。不同客户端/内核对 `TUN`、脚本、部分新协议等能力支持可能不同。
    - 直接看入口与折扣：[#快速注册入口](#register)
 3. 按图文教程完成配置：导入订阅 → 选 `Rule` 模式 → 开启系统代理或 `TUN` → 测速选节点 → 访问测试网站。
-   - 图文教程（含各平台客户端）：[2026 Clash 机场零基础订阅图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
+   - 图文教程（含各平台客户端）：[2026 Clash 机场零基础订阅图文教程：订阅导入到测速](./clash.md)
 4. 选购前先把关键概念搞懂（能少踩一半坑）：
-   - 选购与避坑优先看：[2026 如何挑选优质 Clash 机场（避坑与选购指南）](https://github.com/OpenNetCN/freego/blob/main/choose.md)
+   - 选购与避坑优先看：[2026 如何挑选优质 Clash 机场（避坑与选购指南）](./choose.md)
    - 更多技术专题（线路/协议/名词/排障）见下方：[推荐阅读（按顺序）](#reading)
 5. 做好备份与冗余：保存订阅链接（不要外泄）、准备至少 2 个可用地区/线路，出问题先按“排障清单”排查。
 
@@ -202,11 +204,11 @@
 ## 读者从这里开始（按目标）
 
 - **完全新手（只想尽快稳定可用）**：先按图文做一遍导入与连通性验证 → 再学会怎么挑机场与线路  
-  [Clash 机场零基础图文教程](https://github.com/OpenNetCN/freego/blob/main/clash.md) → [挑选机场（避坑）](https://github.com/OpenNetCN/freego/blob/main/choose.md) → [线路科普（直连/中转/专线）](https://github.com/OpenNetCN/freego/blob/main/route.md)
+  [Clash 机场零基础图文教程](./clash.md) → [挑选机场（避坑）](./choose.md) → [线路科普（直连/中转/专线）](./route.md)
 - **AI 工具（ChatGPT/Claude）重度**：优先搞定“地区可用性 + 稳定性”，别频繁换节点  
-  [挑选机场（偏 AI/原生 IP）](https://github.com/OpenNetCN/freego/blob/main/choose.md) → [协议科普（Reality/TUIC/Hysteria2 等）](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
+  [挑选机场（偏 AI/原生 IP）](./choose.md) → [协议科普（Reality/TUIC/Hysteria2 等）](./protocols.md)
 - **流媒体/跨区（Netflix/Disney+/Max）**：关键在“解锁维护 + 线路质量”，优先看线路与排障  
-  [线路科普](https://github.com/OpenNetCN/freego/blob/main/route.md) → [排障要点](#troubleshoot) → [机场避坑](https://github.com/OpenNetCN/freego/blob/main/choose.md)
+  [线路科普](./route.md) → [排障要点](#troubleshoot) → [机场避坑](./choose.md)
 - **想自建 VPS（学习/备援）**：把自建当“第二通道”更稳，别一上来就当唯一方案  
   先看本文方式对比 → 再从 `Xray-core` / `sing-box` 官方文档入门（见下方“方式一”部分的链接）
 
@@ -225,7 +227,7 @@
 | Android | Clash Meta for Android | `mihomo` 优先 | 省电策略可能杀后台；UDP/QUIC 协议更依赖网络环境 |
 | iOS/iPadOS | Shadowrocket / Stash / Loon / Surge（以商店与地区为准） | 多数为“客户端自带能力” | 部分客户端付费且可能需要外区 Apple ID；协议支持以实际版本为准 |
 
-> 详细下载入口与图文操作：见 [Clash 机场零基础图文教程](https://github.com/OpenNetCN/freego/blob/main/clash.md)。
+> 详细下载入口与图文操作：见 [Clash 机场零基础图文教程](./clash.md)。
 
 ---
 
@@ -267,7 +269,7 @@
 | Hysteria2 | `hy2` / `obfs` / `auth` | 丢包环境下的吞吐表现 | 也依赖 UDP/QUIC；MTU/丢包会导致波动 |
 | Trojan / VLESS（非 Reality） | `trojan` / `vless` / `tls` | 配置通用、兼容性好 | 地区/线路不行时，协议本身救不了体验 |
 
-> 想搞懂细节：看 [线路科普](https://github.com/OpenNetCN/freego/blob/main/route.md) 与 [协议科普](https://github.com/OpenNetCN/freego/blob/main/protocols.md)。
+> 想搞懂细节：看 [线路科普](./route.md) 与 [协议科普](./protocols.md)。
 
 ---
 
@@ -372,11 +374,12 @@
 <a id="reading"></a>
 #### 推荐阅读（按顺序）
 
-- [2026 Clash 机场零基础订阅图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
-- [2026 如何挑选优质 Clash 机场（避坑与选购指南）](https://github.com/OpenNetCN/freego/blob/main/choose.md)
-- [线路科普：直连/中转/专线（IEPL/IPLC）区别与选择](https://github.com/OpenNetCN/freego/blob/main/route.md)
-- [协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
-- [名词科普大全：Clash 机场常用名称解释](https://github.com/OpenNetCN/freego/blob/main/mingci.md)
+- [2026 Clash 机场零基础订阅图文教程：订阅导入到测速](./clash.md)
+- [2026 如何挑选优质 Clash 机场（避坑与选购指南）](./choose.md)
+- [独立排障页：Clash / Mihomo 常见问题排障指南（按症状排查）](./troubleshooting.md)
+- [线路科普：直连/中转/专线（IEPL/IPLC）区别与选择](./route.md)
+- [协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](./protocols.md)
+- [名词科普大全：Clash 机场常用名称解释](./mingci.md)
 
 ##### 近期/权威资料（想“紧跟实事”优先看这些）
 
@@ -534,7 +537,7 @@
 
 iOS 常见客户端有 Shadowrocket、Stash 等（多为付费软件，且可能需要外区 Apple ID）。具体安装与配置见图文教程：
 
-- [2026 Clash 机场零基础订阅图文教程：订阅导入到测速](https://github.com/OpenNetCN/freego/blob/main/clash.md)
+- [2026 Clash 机场零基础订阅图文教程：订阅导入到测速](./clash.md)
 
 ### 6. 免费科学上网工具能用吗？
 
@@ -542,11 +545,11 @@ iOS 常见客户端有 Shadowrocket、Stash 等（多为付费软件，且可能
 
 ### 7. 不知道直连/中转/专线、各种协议有什么区别？
 
-- 线路（直连/中转/专线）：[直连、中转、专线 Clash 机场线路原理与选择指南](https://github.com/OpenNetCN/freego/blob/main/route.md)
-- 协议：[协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](https://github.com/OpenNetCN/freego/blob/main/protocols.md)
+- 线路（直连/中转/专线）：[直连、中转、专线 Clash 机场线路原理与选择指南](./route.md)
+- 协议：[协议科普：VMess/VLESS/Trojan/Reality/TUIC/Hysteria 等怎么选](./protocols.md)
 
 ---
 
 ## 🌐 国外常用网站导航
 
-为避免首页过长、并降低后续维护成本，本清单已独立整理为：[`sites.md`](https://github.com/OpenNetCN/freego/blob/main/sites.md)
+为避免首页过长、并降低后续维护成本，本清单已独立整理为：[`sites.md`](./sites.md)
