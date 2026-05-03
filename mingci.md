@@ -1,8 +1,10 @@
-# Clash 机场专用名词解释字典（终极指南｜V2Ray / Vless / Trojan / Reality 全面科普）
+# Clash 机场专用名词解释字典（终极指南｜V2Ray / VLESS / Trojan / Reality 全面科普）
 
-最近更新：2026-03-11
+最近更新：2026-05-03
 
 > 说明：原版 Clash（`Dreamacro/clash`）项目已基本停止维护；本文中的 “Clash” 多指规则分流生态的客户端/内核（常见为 `mihomo` / `sing-box`）。
+>
+> 核对时间：2026-05-03。客户端名称、订阅字段和协议支持会变化，实际以官方 release 和服务商面板为准。
 
 ## 1. 引言
 
@@ -14,7 +16,7 @@
 
 ### 为什么了解术语很重要
 
-Clash 及其相关配置较为专业，涉及大量技术术语，如「Vmess」「Vless」「Reality」「Rule」「Fake-IP」等。理解这些术语不仅有助于正确配置软件，也能帮助用户选择最合适的机场服务，提高上网体验并避免安全隐患。
+Clash 及其相关配置较为专业，涉及大量技术术语，如「VMess」「VLESS」「Reality」「Rule」「Fake-IP」等。理解这些术语不仅有助于正确配置软件，也能帮助用户选择最合适的机场服务，提高上网体验并避免安全隐患。
 
 ---
 
@@ -28,9 +30,9 @@ Clash 是一类“规则驱动”的代理客户端生态：通过规则把不�
 
 | 名称 | 类型 | 平台 | 说明 |
 |---|---|---|---|
-| **Mihomo（原 Clash.Meta）** | 内核 | 多平台 | 主流内核之一，协议支持更新更快（Reality/TUIC/Hysteria2 等取决于版本） |
+| **Mihomo（原 Clash.Meta）** | 内核 | 多平台 | 主流内核之一，协议支持更新较快（Reality/TUIC/Hysteria2/xHTTP 等取决于版本） |
 | **Sing-box** | 内核 | 多平台 | 另一主流内核，协议覆盖面广，常见于多协议客户端 |
-| **Clash Verge Rev / Mihomo Party / ClashX Meta** | 客户端（前端） | Windows/macOS | 通常内置 `mihomo`，提供 GUI、策略组、TUN 等功能 |
+| **Clash Verge Rev / Clash Party / ClashX Meta** | 客户端（前端） | Windows/macOS/Linux | 通常内置 `mihomo`，提供 GUI、策略组、TUN 等功能 |
 | **Clash Meta for Android** | 客户端（前端） | Android | 常见的 `mihomo` 系移动端方案 |
 | **Clash for Windows（CFW）** | 客户端（历史） | Windows | 早期常用，但长期停更；不建议作为 2026 新手首选 |
 
@@ -46,10 +48,12 @@ Clash 是一类“规则驱动”的代理客户端生态：通过规则把不�
 
 ### 常见节点类型
 
-- **Vmess**：由V2Ray开发，常见于许多机场，兼容性好。
-- **Vless**：Vmess的轻量升级版本，去除了加密，传输更灵活。
+- **VMess**：由 V2Ray 开发，常见于许多存量机场，兼容性好。
+- **VLESS**：VMess 的轻量替代方案，本身不内置加密，通常配合 TLS / Reality 使用。
 - **Trojan**：基于HTTPS协议，伪装性强，抗封锁能力好。
 - **Shadowsocks (SS)**：较早期的加密代理协议，速度快但安全性稍弱。
+- **Reality**：常见为 VLESS + Reality 组合，参数敏感，依赖客户端/内核支持。
+- **Hysteria2 / TUIC**：基于 UDP/QUIC 的高性能协议，更适合实时通信或丢包环境，但依赖 UDP 网络质量。
 
 ---
 
@@ -61,14 +65,28 @@ Clash 是一类“规则驱动”的代理客户端生态：通过规则把不�
 |--------|------|
 | `server` | 节点服务器地址 |
 | `port` | 服务器端口号 |
-| `uuid` | 用户唯一识别码（用于Vmess/Vless） |
-| `alterId` | 额外ID（旧版Vmess专属） |
+| `uuid` | 用户唯一识别码（用于 VMess/VLESS） |
+| `alterId` | 额外 ID（旧版 VMess 专属） |
 | `cipher` | 加密方式（如chacha20-ietf-poly1305） |
 | `tls` | 是否启用TLS加密（true/false） |
+| `sni` / `servername` | TLS 握手使用的域名，Reality/Trojan/VLESS 常见 |
+| `alpn` | TLS 应用层协议协商参数，常见于 h2/http/1.1 等 |
+| `flow` | VLESS/Xray 生态常见字段，如 `xtls-rprx-vision` |
+| `reality-opts` | Reality 相关参数集合，如 public-key、short-id 等 |
+| `udp` | 是否启用 UDP 转发，游戏、语音、Hysteria2/TUIC 常见 |
 
 ### 节点订阅链接（Subscription URL）
 
-机场通常提供一个订阅链接，用户将该链接粘贴至Clash配置界面即可获取全部节点信息，并可自动更新。链接格式通常以 `.yaml` 或 `.txt` 结尾。
+机场通常提供一个订阅链接，用户将该链接粘贴至 Clash / Mihomo 客户端即可获取全部节点信息，并可自动更新。链接格式可能是 `.yaml`、`.txt` 或不带明显后缀。
+
+2026 年常见订阅格式：
+
+- `Clash / Mihomo / Clash.Meta` 订阅：优先推荐，兼容规则分流生态；
+- `sing-box` 订阅：适合 sing-box 系客户端；
+- `Shadowrocket / Surge / Quantumult X` 订阅：面向特定 iOS 客户端；
+- 通用订阅：兼容性不一定最好，遇到新协议字段时可能丢参数。
+
+不要随便把订阅链接放到第三方在线转换网站；订阅链接本质上是账号密钥。
 
 ---
 
@@ -86,9 +104,12 @@ Clash支持三种核心代理模式：
 
 | 使用场景 | 推荐模式 |
 |----------|----------|
-| 看Netflix、YouTube | Global |
+| 日常网页、AI、办公 | Rule |
+| 临时排查规则问题 | Global |
 | 中英文网站同时访问 | Rule |
-| 使用银行/本地服务 | Direct |
+| 使用银行/本地服务 | Rule 或 Direct |
+
+长期不建议默认 `Global`，它会把很多本该直连的国内服务、局域网服务也交给代理，反而增加排障难度。
 
 ---
 
@@ -112,6 +133,13 @@ Clash支持三种核心代理模式：
 
 建议用户使用带有规则集订阅功能的机场，以确保规则长期维护和更新。
 
+2026 年常见规则相关词：
+
+- `rule-set`：规则集订阅，便于自动更新；
+- `provider`：规则或节点提供器，可定期拉取远程内容；
+- `GeoIP / GeoSite`：按 IP 或域名类别分流；
+- `fake-ip-filter`：Fake-IP 模式下不应该被伪造解析的域名列表。
+
 ---
 
 ## 7. DNS配置
@@ -124,6 +152,7 @@ Clash中的DNS模块决定域名如何被解析，并直接影响“域名规则
 
 - **Fake-IP 模式**：Clash将未匹配到真实DNS记录的域名生成一个伪造IP，从而确保规则命中率更高。推荐用于国内外流量混合场景。
 - **真实DNS模式**：通过真实DNS服务器解析域名，但对流量分析要求较高，命中率可能不如Fake-IP。
+- **加密 DNS**：DoH / DoT / DoQ 可减少解析被污染或劫持的概率，但配置错误也会导致“节点可用但网页打不开”。
 
 ```yaml
 dns:
@@ -179,6 +208,8 @@ proxy-groups:
 
 Tun模式可将系统层级所有应用的流量“透明接管”至Clash，实现比传统HTTP/HTTPS代理更强的全局穿透能力。尤其适用于不支持手动设置代理的游戏、软件或系统级服务。
 
+启用 TUN 时要特别注意 DNS、路由和权限。Windows 可能需要管理员权限或 Wintun 相关组件；macOS 可能弹出系统扩展或网络权限提示；Android/iOS 通常表现为 VPN 模式授权。
+
 #### Mihomo 启用 TUN 示例：
 
 ```yaml
@@ -226,10 +257,10 @@ Clash 生态运行时通常会暴露本地控制接口（REST API + Web GUI）�
 
 | 协议 | 特点 | 常用于 |
 |------|------|--------|
-| **TLS** | 标准加密传输层协议，支持HTTPS伪装 | Trojan, Vmess |
+| **TLS** | 标准加密传输层协议，支持 HTTPS 伪装 | Trojan, VMess |
 | **XTLS / Vision** | Xray 体系的传输增强（常见为 `flow: xtls-rprx-vision`），强调性能与抗干扰 | VLESS（部分实现） |
-| **gRPC** | 谷歌提出的高性能协议，基于HTTP/2 | Trojan/Vless中继传输 |
-| **H2 (HTTP/2)** | 低延迟、高并发连接 | Trojan, Vless, Reality |
+| **gRPC** | 谷歌提出的高性能协议，基于 HTTP/2 | Trojan/VLESS 中继传输 |
+| **H2 (HTTP/2)** | 低延迟、高并发连接 | Trojan, VLESS, Reality |
 | **Reality** | 常见为 VLESS + Reality 组合（Xray 体系），用于更强伪装/抗探测 | 取决于内核与客户端是否支持 |
 
 ---
@@ -242,13 +273,13 @@ Clash 生态运行时通常会暴露本地控制接口（REST API + Web GUI）�
 |----------|------|
 | `aes-128-gcm` | 高安全性，对硬件要求较低，广泛兼容 |
 | `chacha20-ietf-poly1305` | 适合移动设备的高性能加密方式 |
-| `none` | 无加密，适用于Vless裸协议（通过TLS保障） |
+| `none` | 无加密，适用于 VLESS 裸协议（通过 TLS 保障） |
 
 ### 如何选择合适的加密方式
 
 - 对于低功耗设备：推荐 `chacha20-ietf-poly1305`
 - 对于通用设备：`aes-128-gcm` 或 `aes-256-gcm` 是稳定之选
-- 使用Vless/Reality等协议时，可选择 `none`，由TLS层加密保障
+- 使用 VLESS/Reality 等协议时，可选择 `none`，由 TLS 层加密保障
 
 ---
 
@@ -413,7 +444,7 @@ DNS泄漏会暴露你的真实访问目的地，即便你使用代理，也可�
 ### 隐私增强配置建议
 
 - 不使用无加密或明文协议（如原始SOCKS/HTTP代理）
-- 使用支持TLS/XTLS的协议（Trojan/Vless+Reality）
+- 使用支持 TLS/XTLS 的协议（Trojan/VLESS + Reality）
 - 禁用日志记录功能（如配置中 `log-level: silent`）
 - 选择支持“混淆”或“伪装”功能的节点（如gRPC伪装）
 

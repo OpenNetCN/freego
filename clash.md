@@ -6,9 +6,11 @@
 >
 > 已经导入成功，但“能连上却用不起来”？直接看：[独立排障页](./troubleshooting.md)
 
-最近更新：2026-03-11
+最近更新：2026-05-03
 
 > 说明：原版 Clash（`Dreamacro/clash`）项目已基本停止维护；本文里的 “Clash” 泛指兼容规则分流生态的客户端/内核，2026 年更常见的是 `mihomo` 系客户端与相关前端。
+>
+> 下载入口核对时间：2026-05-03。安装前以官方 release 页面和应用商店展示为准。
 
 ---
 
@@ -51,13 +53,14 @@
 
 ## 2. 下载适合你设备的客户端
 
-2026 年新手优先选择仍在维护、支持 `mihomo`、支持 `Rule` 和 `TUN` 的客户端。
+2026 年新手优先选择仍在维护、支持 `mihomo`、支持 `Rule` 和 `TUN` 的客户端。旧教程里常见的 Clash for Windows / 原版 Clash 不建议再作为新手首选。
 
 | 平台 | 推荐客户端 | 下载地址 |
 | --- | --- | --- |
 | **Windows** | Clash Verge Rev | [GitHub 下载](https://github.com/clash-verge-rev/clash-verge-rev/releases) |
-|  | Mihomo Party | [GitHub 下载](https://github.com/mihomo-party-org/mihomo-party/releases) |
+|  | Clash Party | [GitHub 下载](https://github.com/mihomo-party-org/clash-party/releases) |
 | **macOS** | Clash Verge Rev | [GitHub 下载](https://github.com/clash-verge-rev/clash-verge-rev/releases) |
+|  | Clash Party | [GitHub 下载](https://github.com/mihomo-party-org/clash-party/releases) |
 |  | ClashX Meta | [GitHub 下载](https://github.com/MetaCubeX/ClashX.Meta/releases) |
 | **Android** | Clash Meta for Android | [GitHub 下载](https://github.com/MetaCubeX/ClashMetaForAndroid/releases) |
 | **iOS / iPadOS** | Shadowrocket | [App Store（付费）](https://apps.apple.com/app/shadowrocket/id932747118) |
@@ -66,6 +69,7 @@
 下载时注意：
 
 - 看清系统版本和芯片架构，不要把 macOS 的 Intel 版装到 Apple Silicon，或者把 ARM 版装到旧机器上；
+- Clash Verge Rev 新版本已不再面向 Windows 7；老系统不要盲目照搬 2026 教程；
 - Windows 首次启用 `TUN` 时，可能需要管理员权限或额外安装驱动；
 - iOS 常见客户端多为付费应用，且可能需要外区 Apple ID。
 
@@ -85,7 +89,9 @@
 - 订阅链接有没有复制完整；
 - 客户端时间是否正确；
 - 你当前网络是否能打开机场官网；
-- 是否把链接粘贴到了错误的入口，例如“本地配置”而不是“订阅配置”。
+- 是否把链接粘贴到了错误的入口，例如“本地配置”而不是“订阅配置”；
+- 客户端是否过旧，不能识别 Reality / Hysteria2 / TUIC / xHTTP 等新字段；
+- 部分机场对订阅请求头有要求，必要时在客户端里调整订阅 User-Agent，或使用面板提供的“Clash/Mihomo 订阅”专用入口。
 
 ---
 
@@ -176,7 +182,8 @@
 - 晚高峰是否掉速；
 - 规则集和 Geo 数据是否过期；
 - 服务商公告和客服是否可联系；
-- 你是否把所有希望都压在一个节点或一个服务上。
+- 你是否把所有希望都压在一个节点或一个服务上；
+- 内核和客户端是否长期不更新，导致新协议字段、安全修复或订阅格式兼容性跟不上。
 
 ---
 
@@ -184,7 +191,7 @@
 
 ### 下载了过时客户端
 
-很多搜索结果还是旧教程，容易把人带到停更或维护不积极的客户端。2026 年新手优先看是否仍在维护、是否支持 `mihomo`、是否支持 `TUN`。
+很多搜索结果还是旧教程，容易把人带到停更或维护不积极的客户端。2026 年新手优先看是否仍在维护、是否支持 `mihomo`、是否支持 `TUN`，以及 release 页面近期是否仍有更新。
 
 ### 一上来就开 `Global`
 
@@ -203,6 +210,10 @@
 - 规则集是否过期；
 - 你是否误开了 `Direct`。
 
+### 订阅能导入，但部分新协议节点全红
+
+这通常不是“所有节点都坏了”，而是客户端/内核和订阅字段不匹配。优先更新到最新 `mihomo` 系客户端；如果机场面板提供多个订阅格式，优先选择 `Clash.Meta / Mihomo` 格式。
+
 ### 到处分享订阅链接
 
 订阅链接不是邀请码，它和你的账号资源绑定。泄露后最常见的后果不是“被黑”，而是流量被别人直接用掉。
@@ -216,7 +227,7 @@
 - 先确认链接复制完整；
 - 用浏览器打开机场官网，看面板是否正常；
 - 尝试在客户端里重新新建订阅，而不是重复覆盖旧配置；
-- 仍不行时，再看是否是客户端版本过旧。
+- 仍不行时，再看是否是客户端版本过旧，或者订阅 User-Agent / 订阅格式不匹配。
 
 ### Q2：为什么我开着代理，但还是打不开网页？
 

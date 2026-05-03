@@ -5,6 +5,8 @@ description: 整理常见的国外网站入口，覆盖搜索、视频、社交�
 <!-- GitHub Pages mirror of ../sites.md. Keep both files aligned intentionally. -->
 # 🌐 国外常用网站导航
 
+最近更新：2026-05-03
+
 以下是整理的一些常用国外网站，涵盖搜索引擎、社交平台、流媒体、学术资源等多个领域，适合日常浏览、学习、工作与娱乐使用。
 
 ### 🔍 搜索引擎
@@ -19,7 +21,9 @@ description: 整理常见的国外网站入口，覆盖搜索、视频、社交�
 - [Twitch](https://www.twitch.tv) – 游戏与直播社区
 - [Netflix](https://www.netflix.com) – 高质量剧集电影流媒体服务
 - [Disney+](https://www.disneyplus.com) – 迪士尼旗下流媒体，包含漫威/星战内容
+- [Max](https://www.max.com) – Warner Bros. Discovery 旗下流媒体平台
 - [Amazon Prime Video](https://www.primevideo.com) – 亚马逊会员专属影视平台
+- [Apple TV+](https://tv.apple.com) – Apple 的原创影视流媒体服务
 
 ### 💬 社交与社区
 - [Twitter (X)](https://x.com) – 全球热点信息首发平台
@@ -37,12 +41,18 @@ description: 整理常见的国外网站入口，覆盖搜索、视频、社交�
 
 ### 💻 开发者与文档
 - [GitHub](https://github.com) – 开源项目与代码托管平台
+- [GitLab](https://gitlab.com) – DevOps 与代码托管平台
 - [Stack Overflow](https://stackoverflow.com) – 编程问答社区
 - [MDN Web Docs](https://developer.mozilla.org) – Web 开发权威文档
+- [Hugging Face](https://huggingface.co) – AI 模型、数据集与应用社区
+- [Docker Hub](https://hub.docker.com) – 容器镜像仓库
 
 ### 🤖 AI 与生产力工具
 - [ChatGPT](https://chatgpt.com) – 对话式 AI 智能助手
 - [Gemini](https://gemini.google.com) – Google 推出的 AI 工具
 - [Claude](https://claude.ai) – Anthropic 公司出品的大模型助手
 - [Perplexity AI](https://www.perplexity.ai) – 问答型 AI 搜索引擎
+- [Microsoft Copilot](https://copilot.microsoft.com) – 微软 AI 助手
+- [Google AI Studio](https://aistudio.google.com) – Google 面向开发者的 AI Studio
+- [Cursor](https://www.cursor.com) – 面向开发者的 AI 代码编辑器
 - [Notion](https://www.notion.so) – 效率工具，可做笔记/知识库/项目管理

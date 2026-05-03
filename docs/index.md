@@ -3,7 +3,6 @@ title: 2026 保姆级科学上网/魔法上网教程 | Clash（规则分流）�
 description: 2026 最新科学上网教程：系统讲解 Clash（规则分流）机场订阅、VPN 与自建 VPS 的原理、选型与使用，从 0 到 1 帮你搭建稳定的跨境网络访问与隐私保护方案。
 ---
 <!-- Intentional mirror: docs/index.md mirrors README.md for GitHub Pages. Keep both aligned on purpose. -->
-
 ## 引言：什么是“科学上网”？
 
 “科学上网”是中文互联网社区对通过技术手段访问被限制或屏蔽的国外互联网内容的通俗称谓，也被称为“翻墙”。这一术语并不意味着从事违法活动，而是强调以技术方式突破网络封锁，实现对信息的自由访问。
@@ -12,7 +11,7 @@ description: 2026 最新科学上网教程：系统讲解 Clash（规则分流�
 
 > ⭐ **觉得有帮助？点个 Star⭐  鼓励我持续更新更多科学上网/Clash 机场/VPN 干货！**
 
-最近更新：2026-03-30
+最近更新：2026-05-03
 
 ---
 
@@ -87,18 +86,21 @@ description: 2026 最新科学上网教程：系统讲解 Clash（规则分流�
 
 > 这一节用于回答两个问题：**“现在还用 Clash 吗？”**、**“到底该下哪个客户端/内核？”**  
 > 你不需要理解所有细节，记住「内核 + 客户端 + 订阅」三件事就能跑起来。
+>
+> 核对时间：2026-05-03。客户端和内核版本变化很快，下载前建议以官方 release 页面为准。
 
 - **原版 Clash（Dreamacro/clash）基本停更**：现在大家口中的 “Clash” 更多是指「规则分流生态」本身，而不是某个单一仓库。
-- **主流内核（2026）**：
-  - `mihomo`：原 Clash.Meta 生态，延续 Clash 配置与规则分流体验（文档与生态：<https://wiki.metacubex.one/>）
-  - `sing-box`：更偏“多协议 + 通用代理平台”，不少新协议/新能力会先在这里出现（官方文档：<https://sing-box.sagernet.org/>）
-- **常见桌面客户端（持续更新）**：
-  - Windows/macOS：Clash Verge Rev（内置/适配 `mihomo`）：<https://github.com/clash-verge-rev/clash-verge-rev/releases>
-  - Windows/macOS/Linux：Mihomo Party（内置/适配 `mihomo`）：<https://github.com/mihomo-party-org/mihomo-party/releases>
+- **主流内核（2026-05）**：
+  - `mihomo`：原 Clash.Meta 生态，延续 Clash 配置与规则分流体验；2026 年 4 月仍在活跃发布，近期重点包括 xHTTP、Hysteria2 相关参数和 TUN 细节修复（文档与生态：<https://wiki.metacubex.one/>）
+  - `sing-box`：更偏“多协议 + 通用代理平台”，适合需要跨平台、多入站/出站、服务端部署或更细配置的用户（官方文档：<https://sing-box.sagernet.org/>）
+- **常见客户端（2026-05 核对）**：
+  - Windows/macOS/Linux：Clash Verge Rev（内置/适配 `mihomo`）：<https://github.com/clash-verge-rev/clash-verge-rev/releases>
+  - Windows/macOS/Linux：Clash Party（原 Mihomo Party 项目路径已迁移）：<https://github.com/mihomo-party-org/clash-party/releases>
   - macOS：ClashX Meta（`mihomo` 系客户端）：<https://github.com/MetaCubeX/ClashX.Meta/releases>
   - Android：Clash Meta for Android（`mihomo` 系客户端）：<https://github.com/MetaCubeX/ClashMetaForAndroid/releases>（F-Droid：<https://f-droid.org/packages/com.github.metacubex.clash.meta/>）
-- **协议趋势（2026）**：Reality / TUIC / Hysteria2 等仍是常见“新协议”关键词；是否能用取决于**机场面板参数 + 你的内核/客户端是否支持**。
-- **配置趋势（2026）**：`TUN`、加密 DNS（DoH/DoT/DoQ）、以及规则集订阅（`rule-set` / providers）越来越常见；很多“能连上但打不开/命不中规则”的问题，本质是 DNS 或规则集没更新。
+- **协议趋势（2026-05）**：Reality / TUIC / Hysteria2 仍是常见关键词；xHTTP、gRPC、REALITY、Hysteria2 端口跳跃等细节更新较快。是否能用取决于**机场面板参数 + 订阅转换质量 + 你的内核/客户端版本**。
+- **配置趋势（2026-05）**：`TUN`、加密 DNS（DoH/DoT/DoQ）、规则集订阅（`rule-set` / providers）和订阅 User-Agent/请求头兼容性更常见；很多“能连上但打不开/命不中规则/订阅更新失败”的问题，本质是 DNS、规则集或订阅格式没对上。
+- **安全更新提醒**：Hysteria2、sing-box、mihomo 等核心组件如果出现安全修复或协议兼容提示，应优先更新；使用 Hysteria2/TUIC 这类 UDP/QUIC 协议时，客户端和服务端版本不匹配也可能导致 UDP 转发异常。
 
 > 不想纠结：按本文「快速开始」走，新手优先选 **`mihomo` 系客户端 + 开启 `Rule` + 必要时启用 `TUN`**。
 
@@ -249,9 +251,9 @@ description: 2026 最新科学上网教程：系统讲解 Clash（规则分流�
 
 | 平台 | 推荐客户端（2026） | 推荐内核路线 | 你可能需要注意 |
 | --- | --- | --- | --- |
-| Windows | Clash Verge Rev / Mihomo Party | `mihomo` 优先 | `TUN` 可能需要管理员权限/Wintun；注意 DNS 与规则集更新 |
-| macOS | Clash Verge Rev / Mihomo Party / ClashX Meta | `mihomo` 优先 | `TUN`/系统扩展权限；首次安装注意“允许”提示 |
-| Linux | Mihomo Party（如需 GUI）/ 自行部署 | `mihomo` 或 `sing-box` | 桌面环境差异大，常见问题在透明代理/TUN 与 DNS |
+| Windows | Clash Verge Rev / Clash Party | `mihomo` 优先 | Clash Verge Rev 已不再面向 Win7；`TUN` 可能需要管理员权限/Wintun；注意 DNS 与规则集更新 |
+| macOS | Clash Verge Rev / Clash Party / ClashX Meta | `mihomo` 优先 | 区分 Intel / Apple Silicon；`TUN`/系统扩展权限；首次安装注意“允许”提示 |
+| Linux | Clash Party（如需 GUI）/ 自行部署 | `mihomo` 或 `sing-box` | 桌面环境差异大，常见问题在透明代理/TUN 与 DNS |
 | Android | Clash Meta for Android | `mihomo` 优先 | 省电策略可能杀后台；UDP/QUIC 协议更依赖网络环境 |
 | iOS/iPadOS | Shadowrocket / Stash / Loon / Surge（以商店与地区为准） | 多数为“客户端自带能力” | 部分客户端付费且可能需要外区 Apple ID；协议支持以实际版本为准 |
 
@@ -296,6 +298,7 @@ description: 2026 最新科学上网教程：系统讲解 Clash（规则分流�
 | TUIC | `tuic` / `uuid` / `password` | 低延迟、对体验有要求 | 依赖 UDP/QUIC 环境；路由器/网络拦 UDP 会断流 |
 | Hysteria2 | `hy2` / `obfs` / `auth` | 丢包环境下的吞吐表现 | 也依赖 UDP/QUIC；MTU/丢包会导致波动 |
 | Trojan / VLESS（非 Reality） | `trojan` / `vless` / `tls` | 配置通用、兼容性好 | 地区/线路不行时，协议本身救不了体验 |
+| xHTTP / gRPC 等传输 | `xhttp` / `grpc` / `h2` | 新版 Xray/mihomo 生态中更常见 | 字段更新快，旧客户端或订阅转换工具可能不识别 |
 
 > 想搞懂细节：看 [线路科普](./route.html) 与 [协议科普](./protocols.html)。
 
@@ -396,8 +399,9 @@ description: 2026 最新科学上网教程：系统讲解 Clash（规则分流�
 - 日常优先 `Rule` 模式（国内直连、国外走代理），只在“规则不覆盖/业务需要”时临时切 `Global`
 - 系统代理 vs `TUN`：浏览器/多数应用用系统代理即可；游戏/不走代理的软件建议启用 `TUN`
 - DNS 很关键：解析污染/劫持会导致“节点可用但网站打不开/规则命不中”；优先使用客户端内置的安全 DNS / 加密 DNS（DoH/DoT/DoQ）方案，并确保规则集/Geo 数据定期更新
-- 订阅更新失败：先检查订阅是否过期、服务商面板是否可访问，再尝试手动更新或重新导入订阅链接
+- 订阅更新失败：先检查订阅是否过期、服务商面板是否可访问，再尝试手动更新、调整订阅 User-Agent 或重新导入订阅链接
 - 使用 Hysteria2 / TUIC 等（常见基于 UDP/QUIC）的协议时：确认客户端允许 UDP、系统/路由器不拦截 UDP；如果“能连但很慢/断流”，优先换同地区的不同线路节点测试
+- Hysteria2 如果遇到“TCP 正常、UDP 不通”，还要确认机场服务端与客户端版本是否兼容；安全修复版本发布后，服务端和客户端最好同步更新
 
 <a id="reading"></a>
 #### 推荐阅读（按顺序）
@@ -415,6 +419,9 @@ description: 2026 最新科学上网教程：系统讲解 Clash（规则分流�
 - sing-box 文档（多协议/通用代理平台）：<https://sing-box.sagernet.org/>
 - Hysteria2 官方文档：<https://hy2.app/>
 - TUIC 协议规范：<https://github.com/tuic-protocol/tuic>
+- Clash Verge Rev Releases：<https://github.com/clash-verge-rev/clash-verge-rev/releases>
+- Clash Party Releases：<https://github.com/mihomo-party-org/clash-party/releases>
+- Clash Meta for Android Releases：<https://github.com/MetaCubeX/ClashMetaForAndroid/releases>
 
 如果你只想快速对比机场套餐，可以参考这份榜单（可能包含邀请码/来源参数，是否使用自行判断）：
 
