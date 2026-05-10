@@ -383,15 +383,18 @@ description: 2026 最新科学上网教程：系统讲解 Clash（规则分流�
 <a id="register"></a>
 #### 🔝 快速注册入口
 
-| 机场 | 核心优势 | 优惠力度 | 截止日期 | 优惠码 | 过境线路 | 快捷跳转 |
-| --- | --- | --- | --- | --- | --- | --- |
-| TNTCloud | 全 IPLC 专线 + 原生 IP，AI 解锁顶级 | 长期 8 折（部分套餐除外） | 长期 | `Tnt80` | 全节点 IPLC 专线 | [立即注册](https://tanu095.tntvipaff.cc/#/register?code=7MPbfr89) |
-| 小蜜蜂机场 | 全 IEPL 性价比，AI/流媒体解锁 | 长期 8 折（部分套餐除外） | 长期 | `TVX8JfZP` | 全节点 IEPL 专线 | [立即注册](https://tangwu095.xmfvipaff01.cc/register?aff=oClLBb5A) |
-| 青云梯 | 老牌稳定，智能分流 | 年付及以上 8 折 / 其他 85 折（部分套餐除外） | 长期 | `gptvpnhelper80` / `gptvpnhelper85` | 企业级 IPLC 专线 | [立即注册](https://realvtest.qytvipaff.cc/register?aff=zcIlh0VY) |
-| 银河云 | Trojan 专线，预算党主力/备用 | 长期 8 折 / 85 折（部分套餐除外） | 长期 | `gptvpnhelper80` / `gptvpnhelper85` | Trojan + IEPL 专线 | [立即注册](https://inv03.galaxyaff.cc/register?aff=tcOd0ob7) |
-| 百变小樱 | 3 天免费试用，新手应急 | 3 天免费 + 95 折 | 长期 | `bbxy-5th` | 三网 IEPL 专线 | [立即注册](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=FFHk) |
-| 贝贝云 | 低门槛入门，日常稳连 | 95 折（新手福利） | 长期 | `beibei.cloud` | 江苏隧道中转线路 | [立即注册](https://888.2beibei.com/register?code=Oa86Fbs3) |
-| WgetCloud | 企业级在线率，重度/团队优选 | 新用户 85 折 | 长期 | 注册赠送 85 折券 | BGP 中转 + IEPL 专线 | [立即注册](https://invite.wgetcloud.ltd/auth/register?code=kVJQPh) |
+下面只保留简单信息和注册入口，适合已经决定使用机场订阅、想快速查看套餐的新手。价格、优惠码、客户端支持和可用入口可能随时间变化，付款前请以官网结算页和服务商公告为准。
+
+| 机场 | 简单定位 | 优惠/参考 | 注册链接 |
+| --- | --- | --- | --- |
+| **BoostNet** | 综合主力首选，适合 AI、流媒体和远程办公一起用 | 新用户 8 折：`boost` | [立即注册](https://boostqz.com?path=register&code=kKMFirlm) |
+| **悠兔机场** | 高端 IEPL 专线，适合长期主用和晚高峰稳定需求 | 新用户 8 折：`888` | [立即注册](https://777.youtu6.shop/register?code=erkQTmbM) |
+| **TNTCloud** | IPLC 专线，偏 AI、原生 IP 和高质量出口场景 | 长期 8 折：`Tnt80` | [立即注册](https://tanu095.tntvipaff.cc/#/register?code=7MPbfr89) |
+| **唯兔云** | IPLC + SS2022，适合 TikTok、电商和多区域业务 | 新人 9 折：`rabbit` | [立即注册](https://realvpn.v2yunvipaff.com/#/?code=5LVpl8Mh) |
+| **青云梯** | 老牌机场，适合年付省心和家庭多设备备用 | 年付及以上 8 折 / 其他 85 折 | [立即注册](https://realvtest.qytvipaff.cc/register?aff=zcIlh0VY) |
+| **银河云** | 预算优先，适合轻中度主力或备用线路 | 长期 8 折 / 85 折 | [立即注册](https://inv03.galaxyaff.cc/register?aff=tcOd0ob7) |
+| **百变小樱** | 新手应急入口，适合先恢复连接再慢慢筛选 | 95 折：`bbxy-5th` | [立即注册](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=FFHk) |
+| **贝贝云** | 低门槛入门，适合轻量试用和备用 | 95 折：`beibei.cloud` | [立即注册](https://888.2beibei.com/register?code=Oa86Fbs3) |
 
 <a id="troubleshoot"></a>
 #### 关键设置与排障要点（通用）
@@ -588,20 +591,3 @@ iOS 常见客户端有 Shadowrocket、Stash 等（多为付费软件，且可能
 ## 🌐 国外常用网站导航
 
 为避免首页过长、并降低后续维护成本，本清单已独立整理为：[`sites.md`](./sites.html)
-
----
-
-## 机场推荐与注册链接
-
-下面只保留简单信息和注册入口，适合已经决定使用机场订阅、想快速查看套餐的新手。价格、优惠码、客户端支持和可用入口可能随时间变化，付款前请以官网结算页和服务商公告为准。
-
-| 机场 | 简单定位 | 优惠/参考 | 注册链接 |
-| --- | --- | --- | --- |
-| **BoostNet** | 综合主力首选，适合 AI、流媒体和远程办公一起用 | 新用户 8 折：`boost` | [立即注册](https://boostqz.com?path=register&code=kKMFirlm) |
-| **悠兔机场** | 高端 IEPL 专线，适合长期主用和晚高峰稳定需求 | 新用户 8 折：`888` | [立即注册](https://777.youtu6.shop/register?code=erkQTmbM) |
-| **TNTCloud** | IPLC 专线，偏 AI、原生 IP 和高质量出口场景 | 长期 8 折：`Tnt80` | [立即注册](https://tanu095.tntvipaff.cc/#/register?code=7MPbfr89) |
-| **唯兔云** | IPLC + SS2022，适合 TikTok、电商和多区域业务 | 新人 9 折：`rabbit` | [立即注册](https://realvpn.v2yunvipaff.com/#/?code=5LVpl8Mh) |
-| **青云梯** | 老牌机场，适合年付省心和家庭多设备备用 | 年付及以上 8 折 / 其他 85 折 | [立即注册](https://realvtest.qytvipaff.cc/register?aff=zcIlh0VY) |
-| **银河云** | 预算优先，适合轻中度主力或备用线路 | 长期 8 折 / 85 折 | [立即注册](https://inv03.galaxyaff.cc/register?aff=tcOd0ob7) |
-| **百变小樱** | 新手应急入口，适合先恢复连接再慢慢筛选 | 95 折：`bbxy-5th` | [立即注册](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=FFHk) |
-| **贝贝云** | 低门槛入门，适合轻量试用和备用 | 95 折：`beibei.cloud` | [立即注册](https://888.2beibei.com/register?code=Oa86Fbs3) |
