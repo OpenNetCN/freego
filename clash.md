@@ -36,6 +36,23 @@
 
 ---
 
+## 还没有订阅？可先看这些入口
+
+下面只放简单信息和注册链接，方便还没有机场账号的新手先拿到订阅链接。价格、优惠码、客户端支持和可用入口可能随时间变化，付款前请以官网结算页和服务商公告为准。
+
+| 机场 | 简单定位 | 优惠/参考 | 注册链接 |
+| --- | --- | --- | --- |
+| **BoostNet** | 综合主力首选，适合 AI、流媒体和远程办公一起用 | 新用户 8 折：`boost` | [立即注册](https://boostqz.com?path=register&code=kKMFirlm) |
+| **悠兔机场** | 高端 IEPL 专线，适合长期主用和晚高峰稳定需求 | 新用户 8 折：`888` | [立即注册](https://777.youtu6.shop/register?code=erkQTmbM) |
+| **TNTCloud** | IPLC 专线，偏 AI、原生 IP 和高质量出口场景 | 长期 8 折：`Tnt80` | [立即注册](https://tanu095.tntvipaff.cc/#/register?code=7MPbfr89) |
+| **唯兔云** | IPLC + SS2022，适合 TikTok、电商和多区域业务 | 新人 9 折：`rabbit` | [立即注册](https://realvpn.v2yunvipaff.com/#/?code=5LVpl8Mh) |
+| **青云梯** | 老牌机场，适合年付省心和家庭多设备备用 | 年付及以上 8 折 / 其他 85 折 | [立即注册](https://realvtest.qytvipaff.cc/register?aff=zcIlh0VY) |
+| **银河云** | 预算优先，适合轻中度主力或备用线路 | 长期 8 折 / 85 折 | [立即注册](https://inv03.galaxyaff.cc/register?aff=tcOd0ob7) |
+| **百变小樱** | 新手应急入口，适合先恢复连接再慢慢筛选 | 95 折：`bbxy-5th` | [立即注册](https://bbxy.xn--cesw6hd3s99f.com/auth/register?code=FFHk) |
+| **贝贝云** | 低门槛入门，适合轻量试用和备用 | 95 折：`beibei.cloud` | [立即注册](https://888.2beibei.com/register?code=Oa86Fbs3) |
+
+---
+
 ## 1. 先拿到订阅链接
 
 大多数机场后台都会提供 “订阅”、“一键导入”、“复制订阅链接” 这类入口。你真正需要的，是一条以 `https://` 开头、可以被客户端导入的订阅地址。
