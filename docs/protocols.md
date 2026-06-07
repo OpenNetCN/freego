@@ -5,11 +5,11 @@ description: 介绍 VMess、VLESS、Trojan、Reality、Hysteria2、TUIC 等常�
 <!-- GitHub Pages mirror of ../protocols.md. Keep both files aligned intentionally. -->
 # 2026 Clash 机场各种协议差别介绍与选择指南（VMess / VLESS / Trojan / Reality / Hysteria2）
 
-最近更新：2026-05-03
+最近更新：2026-06-07
 
-> 说明：原版 Clash（`Dreamacro/clash`）项目已基本停止维护；本文里的 “Clash” 泛指规则分流生态的客户端/内核（常见为 `mihomo` / `sing-box`）。不同内核对协议（Reality/TUIC/Hysteria2 等）的支持程度不完全一致。
+> 说明：原版 Clash（`Dreamacro/clash`）已不再适合作为下载入口；本文里的 “Clash” 泛指规则分流生态的客户端/内核（常见为 `mihomo` / `sing-box`）。不同内核对协议（Reality/TUIC/Hysteria2 等）的支持程度不完全一致。
 >
-> 核对时间：2026-05-03。协议字段和客户端支持变化很快，实际可用性以机场面板参数、内核版本和官方文档为准。
+> 核对时间：2026-06-07。本次核到的 latest：`mihomo v1.19.27`、`sing-box v1.13.13`、`Xray-core v26.3.27`、`Hysteria app/v2.9.2`、`tuic-server-1.0.0`。协议字段和客户端支持变化很快，实际可用性以机场面板参数、内核版本和官方文档为准。
 
 ## Clash 介绍
 
@@ -300,11 +300,13 @@ Hysteria 系列是一类基于 UDP/QUIC、专为复杂网络优化的协议。�
 
 **注意**：需支持 UDP 的服务器端口，否则无法正常运行。
 
-2026 年额外注意：Hysteria2 曾在 2026 年 4 月发布安全修复版本。机场端如果升级了服务端，客户端也应尽量保持较新版本，避免出现 TCP 正常但 UDP 转发异常、端口跳跃参数不兼容等问题。
+2026 年额外注意：Hysteria2 本次核对 latest 为 `app/v2.9.2`。机场端如果升级了服务端，客户端也应尽量保持较新版本，避免出现 TCP 正常但 UDP 转发异常、端口跳跃参数不兼容等问题。
 
 ## TUIC
 
 TUIC 是近年来新兴的代理协议，主打基于 UDP 的高性能加密传输，常被视为 Hysteria2 的“竞品”。
+
+本次核对时，TUIC 独立项目 latest 指向 `tuic-server-1.0.0`，不是高频更新型项目。普通用户更应该关注自己使用的客户端/内核是否正确实现 TUIC，而不是单独追逐协议仓库版本号。
 
 ### 协议概述
 

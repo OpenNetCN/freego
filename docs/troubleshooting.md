@@ -5,7 +5,7 @@ description: 按症状排查 Clash、Mihomo 客户端中的常见问题，覆盖
 <!-- GitHub Pages mirror of ../troubleshooting.md. Keep both files aligned intentionally. -->
 # Clash / Mihomo 独立排障指南（按症状排查）
 
-最近更新：2026-05-03
+最近更新：2026-06-07
 
 这篇文章只做一件事：**别再盲目换节点了，先按症状排查。**
 

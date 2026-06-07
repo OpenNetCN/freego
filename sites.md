@@ -1,6 +1,6 @@
 # 🌐 国外常用网站导航
 
-最近更新：2026-05-03
+最近更新：2026-06-07
 
 以下是整理的一些常用国外网站，涵盖搜索引擎、社交平台、流媒体、学术资源等多个领域，适合日常浏览、学习、工作与娱乐使用。
 
@@ -21,7 +21,7 @@
 - [Apple TV+](https://tv.apple.com) – Apple 的原创影视流媒体服务
 
 ### 💬 社交与社区
-- [Twitter (X)](https://x.com) – 全球热点信息首发平台
+- [X (Twitter)](https://x.com) – 全球热点信息与实时讨论平台
 - [Facebook](https://www.facebook.com) – 世界最大社交网络
 - [Reddit](https://www.reddit.com) – 海外社区讨论中心，话题广泛
 - [Instagram](https://www.instagram.com) – 图片/短视频分享平台
@@ -49,5 +49,8 @@
 - [Perplexity AI](https://www.perplexity.ai) – 问答型 AI 搜索引擎
 - [Microsoft Copilot](https://copilot.microsoft.com) – 微软 AI 助手
 - [Google AI Studio](https://aistudio.google.com) – Google 面向开发者的 AI Studio
+- [NotebookLM](https://notebooklm.google.com) – Google 面向资料整理和笔记问答的 AI 工具
+- [Grok](https://grok.com) – xAI 推出的对话式 AI 工具
+- [GitHub Copilot](https://github.com/features/copilot) – 面向开发者的 AI 编程助手
 - [Cursor](https://www.cursor.com) – 面向开发者的 AI 代码编辑器
 - [Notion](https://www.notion.so) – 效率工具，可做笔记/知识库/项目管理
