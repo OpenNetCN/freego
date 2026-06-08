@@ -465,5 +465,5 @@ Reality、Trojan、VLESS + TLS 都具备较强伪装能力，是目前科学上�
 
 ## 推荐阅读
 
-- [机场推荐榜单 | 2026科学上网指南 ](https://gptvpnhelper.com/airport-access/)
+- [机场推荐榜单 | 2026科学上网指南 ](https://petnooko.com/)
 - [Clash机场常用名称解释](./mingci.html)

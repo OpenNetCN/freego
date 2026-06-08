@@ -443,7 +443,7 @@
 
 如果你只想快速对比机场套餐，可以参考这份榜单（可能包含邀请码/来源参数，是否使用自行判断）：
 
-- [Clash 机场推荐榜单查看 | 适合 AI 工具和流媒体平台](https://gptvpnhelper.com/airport-access/)
+- [Clash 机场推荐榜单查看 | 适合 AI 工具和流媒体平台](https://petnooko.com/)
 
 ---
 

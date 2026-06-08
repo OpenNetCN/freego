@@ -128,4 +128,4 @@ BGP 中转通过多路径动态选择，跨网运营商效果好；普通中转�
 
 ## 推荐阅读
 
-- [机场推荐榜单 | 2026科学上网指南 ](https://gptvpnhelper.com/airport-access/)
+- [机场推荐榜单 | 2026科学上网指南 ](https://petnooko.com/)
