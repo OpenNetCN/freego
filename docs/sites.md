@@ -5,7 +5,7 @@ description: 整理常见的国外网站入口，覆盖搜索、视频、社交�
 <!-- GitHub Pages mirror of ../sites.md. Keep both files aligned intentionally. -->
 # 🌐 国外常用网站导航
 
-最近更新：2026-06-07
+最近更新：2026-10-25
 
 以下是整理的一些常用国外网站，涵盖搜索引擎、社交平台、流媒体、学术资源等多个领域，适合日常浏览、学习、工作与娱乐使用。
 

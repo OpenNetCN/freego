@@ -1,10 +1,10 @@
 # Clash 机场专用名词解释字典（终极指南｜V2Ray / VLESS / Trojan / Reality 全面科普）
 
-最近更新：2026-06-07
+最近更新：2026-10-25
 
 > 说明：原版 Clash（`Dreamacro/clash`）已不再适合作为下载入口；本文中的 “Clash” 多指规则分流生态的客户端/内核（常见为 `mihomo` / `sing-box`）。
 >
-> 核对时间：2026-06-07。本次核到的 latest：`mihomo v1.19.27`、`sing-box v1.13.13`、Clash Verge Rev `v2.5.1`、Clash Party `v1.9.5`、Clash Meta for Android `v2.11.30`。客户端名称、订阅字段和协议支持会变化，实际以官方 release 和服务商面板为准。
+> 核对时间：2026-10-25。本次核到的 latest：`mihomo v1.19.33`、`sing-box v1.14.4`、Clash Verge Rev `v2.5.8`、Clash Party `v2.0.4`、Clash Meta for Android `v2.11.36`、FlClash `v0.9.2`。客户端名称、订阅字段和协议支持会变化，实际以官方 release 和服务商面板为准。
 
 ## 1. 引言
 
@@ -34,6 +34,8 @@ Clash 是一类“规则驱动”的代理客户端生态：通过规则把不�
 | **Sing-box** | 内核 | 多平台 | 另一主流内核，协议覆盖面广，常见于多协议客户端 |
 | **Clash Verge Rev / Clash Party / ClashX Meta** | 客户端（前端） | Windows/macOS/Linux | 通常内置 `mihomo`，提供 GUI、策略组、TUN 等功能 |
 | **Clash Meta for Android** | 客户端（前端） | Android | 常见的 `mihomo` 系移动端方案 |
+| **FlClash** | 客户端（前端） | Windows/macOS/Linux/Android | 基于 `mihomo` 的跨平台客户端，界面简洁 |
+| **v2rayN / v2rayNG** | 客户端（前端） | Windows/Linux/macOS / Android | 多内核客户端，可切换 Xray、sing-box、mihomo |
 | **Clash for Windows（CFW）** | 客户端（历史） | Windows | 早期常用，已不建议作为 2026 新手首选 |
 
 选择建议：优先选“仍在维护 + 支持你需要协议 + 支持 `TUN`”的客户端/内核组合。
@@ -54,6 +56,8 @@ Clash 是一类“规则驱动”的代理客户端生态：通过规则把不�
 - **Shadowsocks (SS)**：较早期的加密代理协议，速度快但安全性稍弱。
 - **Reality**：常见为 VLESS + Reality 组合，参数敏感，依赖客户端/内核支持。
 - **Hysteria2 / TUIC**：基于 UDP/QUIC 的高性能协议，更适合实时通信或丢包环境，但依赖 UDP 网络质量。
+- **AnyTLS**：基于 TLS 的较新协议，重点是减少“TLS 套 TLS”的流量特征，需要较新的 `mihomo` / `sing-box` 支持。
+- **SS2022（Shadowsocks 2022）**：Shadowsocks 的新版规范，加密方式以 `2022-blake3-` 开头，比旧版 SS 更抗重放和主动探测。
 
 ---
 
@@ -273,6 +277,7 @@ Clash 生态运行时通常会暴露本地控制接口（REST API + Web GUI）�
 |----------|------|
 | `aes-128-gcm` | 高安全性，对硬件要求较低，广泛兼容 |
 | `chacha20-ietf-poly1305` | 适合移动设备的高性能加密方式 |
+| `2022-blake3-aes-128-gcm` 等 | SS2022 专用加密方式，需要客户端/内核支持 Shadowsocks 2022 |
 | `none` | 无加密，适用于 VLESS 裸协议（通过 TLS 保障） |
 
 ### 如何选择合适的加密方式

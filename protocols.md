@@ -1,10 +1,10 @@
 # 2026 Clash 机场各种协议差别介绍与选择指南（VMess / VLESS / Trojan / Reality / Hysteria2）
 
-最近更新：2026-06-07
+最近更新：2026-10-25
 
 > 说明：原版 Clash（`Dreamacro/clash`）已不再适合作为下载入口；本文里的 “Clash” 泛指规则分流生态的客户端/内核（常见为 `mihomo` / `sing-box`）。不同内核对协议（Reality/TUIC/Hysteria2 等）的支持程度不完全一致。
 >
-> 核对时间：2026-06-07。本次核到的 latest：`mihomo v1.19.27`、`sing-box v1.13.13`、`Xray-core v26.3.27`、`Hysteria app/v2.9.2`、`tuic-server-1.0.0`。协议字段和客户端支持变化很快，实际可用性以机场面板参数、内核版本和官方文档为准。
+> 核对时间：2026-10-25。本次核到的 latest：`mihomo v1.19.33`、`sing-box v1.14.4`、`Xray-core v26.10.21`、`Hysteria app/v2.13.0`、`tuic-server-1.0.0`。协议字段和客户端支持变化很快，实际可用性以机场面板参数、内核版本和官方文档为准。
 
 ## Clash 介绍
 
@@ -24,13 +24,14 @@ Clash 是一款跨平台的规则化网络代理客户端，主要用于科学�
 
 - VMess（V2Ray 核心协议）
 - VLESS（更轻量的无状态版本）
-- Shadowsocks（SS）
+- Shadowsocks（SS，含新版 SS2022）
 - ShadowsocksR（SSR，存量/逐步淘汰）
 - Trojan
 - SOCKS5
 - HTTP(S) 代理
 - Hysteria2 / TUIC（基于 UDP 的高性能协议）
 - Reality（常见为 VLESS + Reality 组合，用于更强伪装/抗探测）
+- AnyTLS（基于 TLS 的较新协议，机场面板里逐渐常见）
 - xHTTP / gRPC / HTTP/2 等传输方式（不是独立代理协议，但会影响兼容性）
 
 ### 协议对比简表（基础）
@@ -44,6 +45,7 @@ Clash 是一款跨平台的规则化网络代理客户端，主要用于科学�
 | Hysteria2  | QUIC+UDP   | 中       | 强      | 中     | 依赖 UDP/QUIC 网络环境 |
 | TUIC       | TLS+UDP    | 中       | 强      | 中     | 依赖 UDP/QUIC 网络环境 |
 | Reality    | TLS+X25519 | 强       | 支持    | 中-高  | 参数敏感，需客户端/内核支持 |
+| AnyTLS     | TLS        | 强       | 支持    | 中     | 较新，需新版 mihomo/sing-box |
 
 ## VMess
 
@@ -116,6 +118,8 @@ Shadowsocks 支持多种对称加密算法，包括：
 - AES-128-GCM
 
 推荐使用 GCM 或 Poly1305 类别算法，以获得更高安全性和性能。
+
+如果机场面板里出现 `2022-blake3-aes-128-gcm`、`2022-blake3-aes-256-gcm` 这类加密方式，说明用的是 **SS2022（Shadowsocks 2022）**。它在旧版 SS 的基础上加强了抗重放和抗主动探测能力，需要较新的客户端/内核才能导入；老客户端报“不支持的加密方式”时，先更新客户端。
 
 ### SS 与 VMess/VLESS 对比
 
@@ -295,7 +299,9 @@ Hysteria 系列是一类基于 UDP/QUIC、专为复杂网络优化的协议。�
 
 **注意**：需支持 UDP 的服务器端口，否则无法正常运行。
 
-2026 年额外注意：Hysteria2 本次核对 latest 为 `app/v2.9.2`。机场端如果升级了服务端，客户端也应尽量保持较新版本，避免出现 TCP 正常但 UDP 转发异常、端口跳跃参数不兼容等问题。
+2026 年额外注意：Hysteria2 本次核对 latest 为 `app/v2.13.0`。机场端如果升级了服务端，客户端也应尽量保持较新版本，避免出现 TCP 正常但 UDP 转发异常、端口跳跃参数不兼容等问题。
+
+另一个背景是 QUIC 封锁：GFW Report 的研究显示，GFW 自 2024 年 4 月起会解析 QUIC 首包中的 SNI 并按域名封锁，命中后会在一段时间内丢弃同一端口的 UDP 流量。Hysteria 2.6.2+、Xray 25.6.8+、sing-box 1.12+ 已默认把 QUIC 首包拆分发送来绕过这类检测；sing-box 1.14 又给 Hysteria2 加了 Chrome QUIC 指纹和端口跳跃间隔随机化。如果你用的是很老的客户端，Hysteria2 节点“时好时坏”，先升级再判断节点质量。
 
 ## TUIC
 
@@ -324,6 +330,14 @@ TUIC 是近年来新兴的代理协议，主打基于 UDP 的高性能加密传�
 - 如果你的网络 UDP/QUIC 环境好，Hysteria2/TUIC 都可能带来更好的实时体验。
 - 如果校园网、公司网、路由器或运营商限制 UDP，二者都可能不如常规 Trojan/VLESS 稳。
 - 不要只看协议名判断优劣，同地区、同线路、晚高峰实测更重要。
+
+## AnyTLS
+
+AnyTLS 是近两年出现的基于 TLS 的代理协议，主要思路是通过填充和分包策略，减少“代理流量里再套一层 TLS”时容易暴露的长度和时序特征。部分机场（例如以 AnyTLS 为主协议的服务商）已经在面板里直接提供这类节点。
+
+- 需要较新的 `mihomo` / `sing-box` 才能识别，老客户端会报“未知协议”或直接跳过节点；
+- 它走 TCP，不依赖 UDP，在 UDP 受限的网络里通常比 Hysteria2/TUIC 更省心；
+- 和 Reality 一样，参数基本由机场下发，新手不需要手动修改。
 
 ## xHTTP / gRPC / HTTP/2 等传输
 
@@ -427,10 +441,11 @@ proxies:
 
 ### 后续发展趋势
 
-- Reality 仍在普及，是 2026 年常见选项之一。
+- Reality 仍在普及，是 2026 年常见选项之一；AnyTLS、SS2022 在机场面板里也越来越常见。
 - QUIC/UDP 类协议（如 TUIC、Hysteria2）会在游戏、语音和高性能场景中继续出现，但“是否稳定”仍取决于 UDP 网络环境、机场入口/落地与运维。
 - xHTTP、gRPC、Reality 相关字段更新较快，旧客户端和第三方订阅转换会更容易出兼容问题。
-- 客户端生态会继续向 `mihomo` / `sing-box` 收敛：前者偏 “Clash 配置 + 规则分流”，后者偏 “多协议/多形态”。
+- 客户端生态会继续向 `mihomo` / `sing-box` 收敛：前者偏 “Clash 配置 + 规则分流”，后者偏 “多协议/多形态”（sing-box 1.14 还加入了 OpenVPN、Snell 等协议支持）。
+- QUIC 首包 SNI 检测已经是公开研究过的封锁手段，UDP 类协议能否稳定使用，越来越取决于客户端和服务端是否及时更新。
 
 ---
 

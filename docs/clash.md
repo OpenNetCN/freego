@@ -11,11 +11,11 @@ description: 面向完全新手的 Clash 机场使用教程，区分机场官方
 >
 > 已经导入成功，但“能连上却用不起来”？直接看：[独立排障页](./troubleshooting.html)
 
-最近更新：2026-06-07
+最近更新：2026-10-25
 
 > 说明：原版 Clash（`Dreamacro/clash`）已不再适合作为下载入口；本文里的 “Clash” 泛指兼容规则分流生态的客户端/内核，2026 年更常见的是 `mihomo` 系客户端与相关前端。
 >
-> 下载入口核对时间：2026-06-07。本次核到的 latest：Clash Verge Rev `v2.5.1`、Clash Party `v1.9.5`、ClashX Meta `v1.4.37`、Clash Meta for Android `v2.11.30`。安装前仍以官方 release 页面和应用商店展示为准。
+> 下载入口核对时间：2026-10-25。本次核到的 latest：Clash Verge Rev `v2.5.8`、Clash Party `v2.0.4`、ClashX Meta `v1.4.47`、Clash Meta for Android `v2.11.36`、FlClash `v0.9.2`。安装前仍以官方 release 页面和应用商店展示为准。
 
 ---
 
@@ -44,21 +44,24 @@ description: 面向完全新手的 Clash 机场使用教程，区分机场官方
 
 ## 还没有订阅？可先看这些入口
 
-下面只放简单信息和注册链接，方便还没有机场账号的新手先拿到账号。价格、优惠码、客户端支持和可用入口可能随时间变化，付款前请以官网结算页和服务商公告为准。
+下面只放简单信息和注册链接，方便还没有机场账号的新手先拿到账号。价格、客户端支持和可用入口可能随时间变化，付款前请以官网结算页和服务商公告为准。
 
-> 如果你是第一次购买，先用月付/季付验证本地网络、晚高峰和 AI/流媒体可用性。普通用户先看 `BoostNet / 悠兔`；预算备用看 `银河云 / 青云梯`；有原生 IP、跨境业务或团队办公需求，再分别看 `TNTCloud / 唯兔云 / WgetCloud`。
+> 如果你是第一次购买，先用月付/季付验证本地网络、晚高峰和 AI/流媒体可用性。普通用户先看 `BoostNet / 悠兔`；年付轻量或低流量备用看 `青云梯 / 银河云`；有原生 IP、跨境业务或团队办公需求，再分别看 `TNTCloud / 唯兔云 / WgetCloud`；有明确目标国家或家宽出口需求再看 `TAG`。
 
-| 机场 | 简单定位 | 优惠/参考 | 注册链接 |
-| --- | --- | --- | --- |
-| **BoostNet** | 综合主力首选，适合 AI、流媒体和远程办公一起用 | 新用户 8 折：`boost` | [立即注册](https://888.boostqz.com/?path=register&code=kKMFirlm) |
-| **悠兔机场** | 高端 IEPL 专线，适合长期主用和晚高峰稳定需求 | 新用户 8 折：`888` | [立即注册](https://youtunice.com/?path=register&code=erkQTmbM) |
-| **TNTCloud** | IPLC 专线，偏 AI、原生 IP 和高质量出口场景 | 长期 8 折：`Tnt80` | [立即注册](https://tanu095.tntvipaff.cc/#/register?code=7MPbfr89) |
-| **唯兔云** | IPLC + SS2022，适合 TikTok、电商和多区域业务 | 新人 9 折：`rabbit` | [立即注册](https://realvpn.v2yunvipaff.com/#/?code=5LVpl8Mh) |
-| **青云梯** | 老牌机场，适合年付省心和家庭多设备备用 | 年付及以上 8 折 / 其他 85 折 | [立即注册](https://realvtest.qytvipaff.cc/register?aff=zcIlh0VY) |
-| **银河云** | 预算优先，适合轻中度主力或备用线路 | 长期 8 折 / 85 折 | [立即注册](https://inv03.galaxyaff.cc/register?aff=tcOd0ob7) |
-| **WgetCloud** | 团队办公和高预算稳定性刚需，当前更适合能接受年付门槛的人 | 新用户通常有 85 折券，以结算页为准 | [立即注册](https://invite.wgetcloud.ltd/auth/register?code=kVJQPh) |
+| 机场 | 简单定位 | 入门套餐 / 实付参考 | 客户端 | 注册链接 |
+| --- | --- | --- | --- | --- |
+| **BoostNet** | 综合主力首选，适合 AI、流媒体和远程办公一起用 | 200GB/月，¥49/月 | 官方客户端 + Clash 等通用客户端 | [立即注册](https://tw.boostqz.com/?path=register&code=kKMFirlm) |
+| **悠兔机场** | 高端 IEPL 专线，适合长期主用和晚高峰稳定需求 | 先试 150GB/月 ¥39；主力 300GB/月 ¥59 | 官方客户端 + Clash 等通用客户端 | [立即注册](https://tw.youtu1.com/?path=register&code=erkQTmbM) · [备用](https://tw.youtunice.com/?path=register&code=erkQTmbM) |
+| **青云梯** | 老牌 IPLC 机场，适合年付轻量和家庭多设备 | 60GB/月，¥96/年（此档仅年付） | 仅官方客户端 | [立即注册](https://realvtest.qytvipaff.cc/register?aff=zcIlh0VY) |
+| **TNTCloud** | IPLC 专线，适合已有主力后补原生 IP / 专项出口 | 试线路 110GB/月 ¥20；主用 220GB/月 ¥40 | 仅官方客户端 | [立即注册](https://tanu095.tntvipaff.cc/#/register?code=7MPbfr89) |
+| **唯兔云** | IPLC + SS2022，适合 TikTok、电商和多区域业务 | 先试 100GB/月 ¥14.9；主力 200GB/月 ¥29.9 | 仅官方客户端 | [立即注册](https://realvpn.v2yunvipaff.com/#/?code=5LVpl8Mh) |
+| **银河云** | 预算备用，适合当第二家低流量线路 | 50GB/月 ¥98/年；月付可看 100GB/月 ¥18 | 仅官方客户端 | [立即注册](https://realvtest.galaxyvipaff01.cc/register?aff=tcOd0ob7) |
+| **WgetCloud** | 团队办公和高预算稳定性刚需 | 230GB/30天，实付 ¥297/90天（折合 ¥99/月，不代表可月付） | Clash 等通用客户端 | [立即注册（需外网）](https://invite.wgetcloud.ltd/auth/register?code=kVJQPh) |
+| **TAG** | 多地区与家宽出口补充，适合目标国家/平台明确的人 | 历史记录：Special ¥162/年（全年共 200GB）；Bronze ¥185/季（250GB/月） | 历史资料支持官方及通用客户端，付款前核对 | [立即注册](https://1028605.l49.net/#/auth/0XHcA2ji) |
 
-> 本次入口更新时间：2026-06-07。这里保留更适合跟随教程长期配置的主力/备用入口；优惠码、客户端要求、套餐和可用入口变化很快，付款前请以服务商公告和结算页为准。
+> 本次入口更新时间：2026-10-25。机场顺序、注册链接、套餐参考和客户端口径按 `../clash/README.md` 2026-10-24 版本同步；百变小樱已不再列入推荐，TAG 套餐为 2026-08-24 历史记录。价格为资料记录价，不代表当前结算价；付款前请以服务商公告和结算页为准。
+>
+> 想按本教程用 Clash / Mihomo 类通用客户端导入订阅，优先看 `BoostNet / 悠兔 / WgetCloud`；青云梯、TNTCloud、唯兔云、银河云目前只支持官方客户端，买前先确认自己的设备有官方客户端。
 
 ---
 
@@ -114,12 +117,18 @@ description: 面向完全新手的 Clash 机场使用教程，区分机场官方
 | --- | --- | --- |
 | **Windows** | Clash Verge Rev | [GitHub 下载](https://github.com/clash-verge-rev/clash-verge-rev/releases) |
 |  | Clash Party | [GitHub 下载](https://github.com/mihomo-party-org/clash-party/releases) |
+|  | FlClash | [GitHub 下载](https://github.com/chen08209/FlClash/releases) |
+|  | v2rayN（多内核，偏进阶） | [GitHub 下载](https://github.com/2dust/v2rayN/releases) |
 | **macOS** | Clash Verge Rev | [GitHub 下载](https://github.com/clash-verge-rev/clash-verge-rev/releases) |
 |  | Clash Party | [GitHub 下载](https://github.com/mihomo-party-org/clash-party/releases) |
 |  | ClashX Meta | [GitHub 下载](https://github.com/MetaCubeX/ClashX.Meta/releases) |
+|  | FlClash | [GitHub 下载](https://github.com/chen08209/FlClash/releases) |
 | **Android** | Clash Meta for Android | [GitHub 下载](https://github.com/MetaCubeX/ClashMetaForAndroid/releases) |
+|  | FlClash | [GitHub 下载](https://github.com/chen08209/FlClash/releases) |
+|  | v2rayNG（多内核，偏进阶） | [GitHub 下载](https://github.com/2dust/v2rayNG/releases) |
 | **iOS / iPadOS** | Shadowrocket | [App Store（付费）](https://apps.apple.com/app/shadowrocket/id932747118) |
 |  | Stash | [App Store（付费）](https://apps.apple.com/app/stash-rule-based-proxy/id1596063349) |
+|  | sing-box（1.14 起重新上架，需 sing-box 格式订阅） | [App Store（免费）](https://apps.apple.com/us/app/sing-box-mt/id6785326793) |
 
 下载时注意：
 
